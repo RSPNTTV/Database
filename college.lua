@@ -1,5 +1,3 @@
-local module = {}
-
 function getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
@@ -1124,5 +1122,3 @@ function getTeam(teamName)
 	end
 	return "None"
 end
-
-return module
