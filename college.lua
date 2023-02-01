@@ -456,9 +456,9 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "rutgers") then
 		return {
-			City = "Colorado State",
-			Name = "Rams",
-			Abbreviation = "CSU",
+			City = "Rutgers",
+			Name = "Scarlet Knights",
+			Abbreviation = "RU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
