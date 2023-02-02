@@ -1017,7 +1017,7 @@ function getTeam(teamName)
 	elseif (string.lower(teamName) == "florida state") then
 		return {
 			City = "Florida State",
-			Name = "Huskies",
+			Name = "Seminoles",
 			Abbreviation = "FSU",
 			EndzoneDecal = "NONE",
 			Colors = {
