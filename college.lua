@@ -104,9 +104,9 @@ function getTeam(teamName)
 				}
 			},
 		}	
-	elseif (string.lower(teamName) == "flordia") then
+	elseif (string.lower(teamName) == "florida") then
 		return {
-			City = "Flordia",
+			City = "Florida",
 			Name = "Gators",
 			Abbreviation = "UF",
 			EndzoneDecal = "NONE",
@@ -1014,9 +1014,9 @@ function getTeam(teamName)
 				}
 			},
 		}	
-	elseif (string.lower(teamName) == "flordia state") then
+	elseif (string.lower(teamName) == "florida state") then
 		return {
-			City = "Flordia State",
+			City = "Florida State",
 			Name = "Huskies",
 			Abbreviation = "FSU",
 			EndzoneDecal = "NONE",
