@@ -963,7 +963,7 @@ function getTeam(teamName)
 					Home = {
 						NumberInner = "#FFFFFF",
 						NumberStroke = "#000000",
-						Helmet = "#660000",
+						Helmet = "#FFFFFF",
 						Jersey = "#660000",
 						Stripe = "#660000",
 						Pants = "#FFFFFF"
