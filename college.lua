@@ -1084,6 +1084,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+       elseif (string.lower(teamName) == "Louisville") then
+		return {
+			City = "Louisville",
+			Name = "Cardinals",
+			Abbreviation = "LU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#AD0000",
+					Light = "#FF0000"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#AD0000",
+						Jersey = "#AD0000",
+						Stripe = "#000000",
+						Pants = "#AD0000"
+					},
+					Away = {
+						NumberInner = "#000000",
+						NumberStroke = "#AD0000",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#000000",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	elseif (string.lower(teamName) == "san jose") then
 		return {
 			City = "San Jose State",
