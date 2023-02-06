@@ -1084,7 +1084,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-       elseif (string.lower(teamName) == "Louisville") then
+       elseif (string.lower(teamName) == "louisville") then
 		return {
 			City = "Louisville",
 			Name = "Cardinals",
