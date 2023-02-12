@@ -1119,6 +1119,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "California") then
+		return {
+			City = "California",
+			Name = "Golden Bears",
+			Abbreviation = "UC",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#003262",
+					Light = "#007BED"
+				},
+				Alternate = {
+					Main = "#C4820E",
+					Light = "#FFD427"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FDB515",
+						NumberStroke = "#3B7EA1",
+						Helmet = "#003262",
+						Jersey = "#003262",
+						Stripe = "#FDB515",
+						Pants = "#FDB515"
+					},
+					Away = {
+						NumberInner = "#003262",
+						NumberStroke = "#FDB515",
+						Helmet = "#003262",
+						Jersey = "#FDB515",
+						Stripe = "#003262",
+						Pants = "#FDB515"
+					}
+				}
+			},
+		}		
 	elseif (string.lower(teamName) == "san jose") then
 		return {
 			City = "San Jose State",
@@ -1156,4 +1191,5 @@ function getTeam(teamName)
 		}		
 	end
 	return "None"
+end
 end
