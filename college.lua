@@ -1201,21 +1201,21 @@ function getTeam(teamName)
 					Light = "#006EDB"
 				},
 				Alternate = {
-					Main = "#CC0033",
+					Main = "#820021",
 					Light = "#FFF3C9"
 				},
 				Jersey = {
 					Home = {
-						NumberInner = "#CC0033",
-						NumberStroke = "#CC0033",
+						NumberInner = "#820021",
+						NumberStroke = "#820021",
 						Helmet = "#003366",
 						Jersey = "#003366",
-						Stripe = "#CC0033",
+						Stripe = "#820021",
 						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#003366",
-						NumberStroke = "#CC0033",
+						NumberStroke = "#820021",
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
 						Stripe = "#CC0033",
