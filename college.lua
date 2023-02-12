@@ -1188,7 +1188,42 @@ function getTeam(teamName)
 					}
 				}
 			},
-		}		
+		}
+		lseif (string.lower(teamName) == "Arizona") then
+		return {
+			City = "Arizona",
+			Name = "Wildcats",
+			Abbreviation = "AU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#003366",
+					Light = "#006EDB"
+				},
+				Alternate = {
+					Main = "#CC0033",
+					Light = "#FFF3C9"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#CC0033",
+						NumberStroke = "#CC0033",
+						Helmet = "#003366",
+						Jersey = "#003366",
+						Stripe = "#CC0033",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#003366",
+						NumberStroke = "#CC0033",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#CC0033",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
