@@ -1,3 +1,7 @@
+function getTeam()
+	
+end
+
 function getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
@@ -1084,7 +1088,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-       elseif (string.lower(teamName) == "louisville") then
+	elseif (string.lower(teamName) == "louisville") then
 		return {
 			City = "Louisville",
 			Name = "Cardinals",
@@ -1224,5 +1228,6 @@ function getTeam(teamName)
 				}
 			},
 		}
+	end
+	return "None"
 end
-return "None"
