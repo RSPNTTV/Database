@@ -1119,7 +1119,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "California") then
+	elseif (string.lower(teamName) == "california") then
 		return {
 			City = "California",
 			Name = "Golden Bears",
@@ -1189,7 +1189,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "Arizona") then
+	elseif (string.lower(teamName) == "arizona") then
 		return {
 			City = "Arizona",
 			Name = "Wildcats",
