@@ -1,7 +1,3 @@
-function getTeam()
-	
-end
-
 function getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
