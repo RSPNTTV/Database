@@ -1189,7 +1189,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-		lseif (string.lower(teamName) == "Arizona") then
+	elseif (string.lower(teamName) == "Arizona") then
 		return {
 			City = "Arizona",
 			Name = "Wildcats",
