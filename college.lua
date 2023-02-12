@@ -1224,5 +1224,5 @@ function getTeam(teamName)
 				}
 			},
 		}
-	end
-	return "None"
+       end
+return "None"
