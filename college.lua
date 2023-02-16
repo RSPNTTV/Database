@@ -1225,5 +1225,5 @@ function getTeam(teamName)
 			},
 		}
 	end
-	return "None"
+	return nil
 end
