@@ -1,4 +1,6 @@
-function getTeam(teamName)
+module = {}
+
+function module:getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
 			City = "South Carolina",
@@ -1227,3 +1229,5 @@ function getTeam(teamName)
 	end
 	return nil
 end
+
+return module
