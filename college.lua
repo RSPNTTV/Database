@@ -231,7 +231,7 @@ function getTeam(teamName)
 						Helmet = "#F56600",
 						Jersey = "#F56600",
 						Stripe = "#FFFFFF",
-						Pants = "#F56600"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#F56600",
@@ -309,7 +309,7 @@ function getTeam(teamName)
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
 						Stripe = "#FFFFFF",
-						Pants = "#FFFFFF"
+						Pants = "#FF7300"
 					}
 				}
 			},
@@ -616,7 +616,7 @@ function getTeam(teamName)
 						Helmet = "#003087",
 						Jersey = "#003087",
 						Stripe = "#FFFFFF",
-						Pants = "#003087"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#003087",
