@@ -403,18 +403,18 @@ function getTeam(teamName)
 					Home = {
 						NumberInner = "#FFFFFF",
 						NumberStroke = "#BB0000",
-						Helmet = "#666666",
+						Helmet = "#C7C7C7",
 						Jersey = "#BB0000",
 						Stripe = "#FFFFFF",
-						Pants = "#666666"
+						Pants = "#C7C7C7"
 					},
 					Away = {
 						NumberInner = "#BB0000",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#666666",
+						Helmet = "#C7C7C7",
 						Jersey = "#FFFFFF",
 						Stripe = "#BB0000",
-						Pants = "#666666"
+						Pants = "#C7C7C7"
 					}
 				}
 			},
