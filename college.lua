@@ -108,7 +108,7 @@ function getTeam(teamName)
 		return {
 			City = "Florida",
 			Name = "Gators",
-			Abbreviation = "UF",
+			Abbreviation = "FLA",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -213,7 +213,7 @@ function getTeam(teamName)
 		return {
 			City = "Clemson",
 			Name = "Tigers",
-			Abbreviation = "CU",
+			Abbreviation = "CLEM",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -283,7 +283,7 @@ function getTeam(teamName)
 		return {
 			City = "Oklahoma State",
 			Name = "Cowboys",
-			Abbreviation = "OSU",
+			Abbreviation = "OKST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -318,7 +318,7 @@ function getTeam(teamName)
 		return {
 			City = "Hawaii",
 			Name = "Warriors",
-			Abbreviation = "UH",
+			Abbreviation = "HAW",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -353,7 +353,7 @@ function getTeam(teamName)
 		return {
 			City = "Oregon State",
 			Name = "Beavers",
-			Abbreviation = "OSU",
+			Abbreviation = "ORST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -458,7 +458,7 @@ function getTeam(teamName)
 		return {
 			City = "Rutgers",
 			Name = "Scarlet Knights",
-			Abbreviation = "RU",
+			Abbreviation = "RUTG",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -528,7 +528,7 @@ function getTeam(teamName)
 		return {
 			City = "Texas",
 			Name = "Longhorns",
-			Abbreviation = "UT",
+			Abbreviation = "TEX",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -563,7 +563,7 @@ function getTeam(teamName)
 		return {
 			City = "Cincinnati",
 			Name = "Bearcats",
-			Abbreviation = "UC",
+			Abbreviation = "CINN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -598,7 +598,7 @@ function getTeam(teamName)
 		return {
 			City = "Duke",
 			Name = "Blue Devils",
-			Abbreviation = "DU",
+			Abbreviation = "DUKE",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -703,7 +703,7 @@ function getTeam(teamName)
 		return {
 			City = "Troy",
 			Name = "Trojans",
-			Abbreviation = "TU",
+			Abbreviation = "TROY",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -773,7 +773,7 @@ function getTeam(teamName)
 		return {
 			City = "Tulane",
 			Name = "Green Wave",
-			Abbreviation = "TU",
+			Abbreviation = "TULN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -843,7 +843,7 @@ function getTeam(teamName)
 		return {
 			City = "Penn State",
 			Name = "Nittany Lions",
-			Abbreviation = "PSU",
+			Abbreviation = "PENN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -878,7 +878,7 @@ function getTeam(teamName)
 		return {
 			City = "Georgia Tech",
 			Name = "Yellow Jackets",
-			Abbreviation = "GIT",
+			Abbreviation = "GT",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -913,7 +913,7 @@ function getTeam(teamName)
 		return {
 			City = "San Diego State",
 			Name = "Aztecs",
-			Abbreviation = "SSU",
+			Abbreviation = "SDSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -948,7 +948,7 @@ function getTeam(teamName)
 		return {
 			City = "Mississippi State",
 			Name = "Bulldogs",
-			Abbreviation = "MSU",
+			Abbreviation = "MSST",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -983,7 +983,7 @@ function getTeam(teamName)
 		return {
 			City = "UConn",
 			Name = "Huskies",
-			Abbreviation = "UC",
+			Abbreviation = "CONN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1053,7 +1053,7 @@ function getTeam(teamName)
 		return {
 			City = "Kansas",
 			Name = "Jayhawks",
-			Abbreviation = "UK",
+			Abbreviation = "KSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1088,7 +1088,7 @@ function getTeam(teamName)
 		return {
 			City = "Louisville",
 			Name = "Cardinals",
-			Abbreviation = "LU",
+			Abbreviation = "LOU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1123,7 +1123,7 @@ function getTeam(teamName)
 		return {
 			City = "California",
 			Name = "Golden Bears",
-			Abbreviation = "UC",
+			Abbreviation = "CAL",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1158,7 +1158,7 @@ function getTeam(teamName)
 		return {
 			City = "San Jose State",
 			Name = "Spartans",
-			Abbreviation = "SSU",
+			Abbreviation = "SJSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1193,7 +1193,7 @@ function getTeam(teamName)
 		return {
 			City = "Arizona",
 			Name = "Wildcats",
-			Abbreviation = "AU",
+			Abbreviation = "ARIZ",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
