@@ -61,9 +61,9 @@ function getTeam(teamName)
 					Away = {
 						NumberInner = "#18453B",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#FFFFFF",
+						Helmet = "#18453B",
 						Jersey = "#FFFFFF",
-						Stripe = "#18453B",
+						Stripe = "#FFFFFF",
 						Pants = "#18453B"
 					}
 				}
