@@ -213,7 +213,7 @@ function getTeam(teamName)
 		return {
 			City = "Clemson",
 			Name = "Tigers",
-			Abbreviation = "CLEM",
+			Abbreviation = "CU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
