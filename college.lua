@@ -64,7 +64,7 @@ function getTeam(teamName)
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
 						Stripe = "#18453B",
-						Pants = "#FFFFFF"
+						Pants = "#18453B"
 					}
 				}
 			},
