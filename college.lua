@@ -1224,6 +1224,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "washington") then
+		return {
+			City = "Washington",
+			Name = "Huskies",
+			Abbreviation = "UW",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#003366",
+					Light = "#006EDB"
+				},
+				Alternate = {
+					Main = "#820021",
+					Light = "#FFF3C9"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#85754D",
+						Helmet = "#85754D",
+						Jersey = "#4B2E83",
+						Stripe = "#85754D",
+						Pants = "#85754D"
+					},
+					Away = {
+						NumberInner = "#85754D",
+						NumberStroke = "#4B2E83",
+						Helmet = "#85754D",
+						Jersey = "#FFFFFF",
+						Stripe = "#4B2E833",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
