@@ -1232,12 +1232,12 @@ function getTeam(teamName)
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
-					Main = "#003366",
-					Light = "#006EDB"
+					Main = "#4B2E83",
+					Light = "#6840B8"
 				},
 				Alternate = {
-					Main = "#820021",
-					Light = "#FFF3C9"
+					Main = "#BAA46C",
+					Light = "#FFE194"
 				},
 				Jersey = {
 					Home = {
