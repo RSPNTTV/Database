@@ -1259,6 +1259,76 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "arizona") then
+		return {
+			City = "Arizona",
+			Name = "Wildcats",
+			Abbreviation = "ARIZ",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#003366",
+					Light = "#006EDB"
+				},
+				Alternate = {
+					Main = "#820021",
+					Light = "#FFF3C9"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#820021",
+						NumberStroke = "#820021",
+						Helmet = "#003366",
+						Jersey = "#003366",
+						Stripe = "#820021",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#003366",
+						NumberStroke = "#820021",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#CC0033",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+	elseif (string.lower(teamName) == "maryland") then
+		return {
+			City = "Maryland",
+			Name = "Terrapins",
+			Abbreviation = "UW",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E03A3E",
+					Light = "#FF7577"
+				},
+				Alternate = {
+					Main = "#FFD520",
+					Light = "#FFFEA9"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#FFFFFF",
+						Jersey = "#E03A3E",
+						Stripe = "#000000",
+						Pants = "#E03A3E"
+					},
+					Away = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#E03A3E",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#E03A3E",
+						Pants = "#E03A3E"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
