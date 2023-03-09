@@ -1329,6 +1329,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "baylor") then
+		return {
+			City = "Baylor",
+			Name = "Bears",
+			Abbreviation = "BU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#154734",
+					Light = "#2F9C72"
+				},
+				Alternate = {
+					Main = "#FFB81C",
+					Light = "#FFDE7D"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB81C",
+						NumberStroke = "#000000",
+						Helmet = "#154734",
+						Jersey = "#154734",
+						Stripe = "#FFB81C",
+						Pants = "#154734"
+					},
+					Away = {
+						NumberInner = "#154734",
+						NumberStroke = "#FFB81C",
+						Helmet = "#154734",
+						Jersey = "#FFFFFF",
+						Stripe = "#154734",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
