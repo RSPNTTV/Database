@@ -1329,6 +1329,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "boise state") then
+		return {
+			City = "Boise State",
+			Name = "Broncos",
+			Abbreviation = "BSU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0033A0",
+					Light = "#0048E3"
+				},
+				Alternate = {
+					Main = "#D64309",
+					Light = "#FF500A"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#D64309",
+						Helmet = "#0033A0",
+						Jersey = "#0033A0",
+						Stripe = "#D64309",
+						Pants = "#0033A0"
+					},
+					Away = {
+						NumberInner = "#0033A0",
+						NumberStroke = "#D64309",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#D64309",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	elseif (string.lower(teamName) == "baylor") then
 		return {
 			City = "Baylor",
