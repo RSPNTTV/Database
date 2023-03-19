@@ -1364,7 +1364,42 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "baylor") then
+	elseif (string.lower(teamName) == "northwestern") then
+		return {
+			City = "Northwestern",
+			Name = "Wildcats",
+			Abbreviation = "NU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#4E2A84",
+					Light = "#8B4BEB"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#4E2A84",
+						Jersey = "#4E2A84",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#4E2A84",
+						NumberStroke = "#000000",
+						Helmet = "#4E2A84",
+						Jersey = "#FFFFFF",
+						Stripe = "#4E2A84",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
+      elseif (string.lower(teamName) == "baylor") then
 		return {
 			City = "Baylor",
 			Name = "Bears",
