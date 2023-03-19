@@ -1189,41 +1189,6 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "arizona") then
-		return {
-			City = "Arizona",
-			Name = "Wildcats",
-			Abbreviation = "ARIZ",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#003366",
-					Light = "#006EDB"
-				},
-				Alternate = {
-					Main = "#820021",
-					Light = "#FFF3C9"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#820021",
-						NumberStroke = "#820021",
-						Helmet = "#003366",
-						Jersey = "#003366",
-						Stripe = "#820021",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#003366",
-						NumberStroke = "#820021",
-						Helmet = "#FFFFFF",
-						Jersey = "#FFFFFF",
-						Stripe = "#CC0033",
-						Pants = "#FFFFFF"
-					}
-				}
-			},
-		}
 	elseif (string.lower(teamName) == "washington") then
 		return {
 			City = "Washington",
