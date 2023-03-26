@@ -1364,6 +1364,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+	elseif (string.lower(teamName) == "indiana") then
+		return {
+			City = "Indiana",
+			Name = "Hoosiers",
+			Abbreviation = "INDI",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#990000",
+					Light = "#DB0000"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#990000",
+						Helmet = "#990000",
+						Jersey = "#990000",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#990000",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#990000",
+						Jersey = "#FFFFFF",
+						Stripe = "#990000",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}		
       elseif (string.lower(teamName) == "baylor") then
 		return {
 			City = "Baylor",
