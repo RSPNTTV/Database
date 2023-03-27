@@ -1398,7 +1398,42 @@ function getTeam(teamName)
 					}
 				}
 			},
-		}		
+		}
+	elseif (string.lower(teamName) == "mizzou") then
+		return {
+			City = "Mizzou",
+			Name = "Tigers",
+			Abbreviation = "MIZZ",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#D6A529",
+					Light = "#FFC430"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#F1B82D",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#000000",
+						Stripe = "#F1B82D",
+						Pants = "#F1B82D"
+					},
+					Away = {
+						NumberInner = "#000000",
+						NumberStroke = "#F1B82D",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#F1B82D",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}	
       elseif (string.lower(teamName) == "baylor") then
 		return {
 			City = "Baylor",
