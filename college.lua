@@ -1433,7 +1433,42 @@ function getTeam(teamName)
 					}
 				}
 			},
-		}	
+		}
+	elseif (string.lower(teamName) == "south florida") then
+		return {
+			City = "South Florida",
+			Name = "Bulls",
+			Abbreviation = "USF",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#006747",
+					Light = "#008C60"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#CFC493",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#CFC493",
+						Jersey = "#006747",
+						Stripe = "#CFC493",
+						Pants = "#006747"
+					},
+					Away = {
+						NumberInner = "#006747",
+						NumberStroke = "#CFC493",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#006747",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}		
       elseif (string.lower(teamName) == "baylor") then
 		return {
 			City = "Baylor",
