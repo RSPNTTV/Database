@@ -1503,6 +1503,41 @@ function getTeam(teamName)
 					}
 				}
 			},
+		}
+	elseif (string.lower(teamName) == "minnesota") then
+		return {
+			City = "Minnesota",
+			Name = "Golden Gophers",
+			Abbreviation = "MINN",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#862334",
+					Light = "#BF3249"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFCC33",
+						Helmet = "#FFCC33",
+						Jersey = "#862334",
+						Stripe = "#862334",
+						Pants = "#862334"
+					},
+					Away = {
+						NumberInner = "#862334",
+						NumberStroke = "#FFCC33",
+						Helmet = "#FFCC33",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFCC33",
+						Pants = "#862334"
+					}
+				}
+			},
 		}	
       elseif (string.lower(teamName) == "baylor") then
 		return {
