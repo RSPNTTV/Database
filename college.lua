@@ -1533,7 +1533,7 @@ function getTeam(teamName)
 						NumberStroke = "#FFCC33",
 						Helmet = "#FFCC33",
 						Jersey = "#FFFFFF",
-						Stripe = "#FFCC33",
+						Stripe = "#862334",
 						Pants = "#862334"
 					}
 				}
