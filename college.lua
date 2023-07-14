@@ -1574,6 +1574,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+      elseif (string.lower(teamName) == "oregon") then
+		return {
+			City = "Oregon",
+			Name = "Ducks",
+			Abbreviation = "ORE",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#154733",
+					Light = "#008A00"
+				},
+				Alternate = {
+					Main = "#FEE123",
+					Light = "#FFE281"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FEE123",
+						NumberStroke = "#FEE123",
+						Helmet = "#154733",
+						Jersey = "#154733",
+						Stripe = "#154733",
+						Pants = "#154733"
+					},
+					Away = {
+						NumberInner = "#154733",
+						NumberStroke = "#FEE123",
+						Helmet = "#154733",
+						Jersey = "#FFFFFF",
+						Stripe = "#154733",
+						Pants = "#154733"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
