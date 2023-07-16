@@ -1644,6 +1644,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+      elseif (string.lower(teamName) == "Texas A&M") then
+		return {
+			City = "Texas A&M",
+			Name = "Aggies",
+			Abbreviation = "TAMU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#500000",
+					Light = "#660000"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#500000",
+						Helmet = "#500000",
+						Jersey = "#500000",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#500000",
+						NumberStroke = "#500000",
+						Helmet = "#500000",
+						Jersey = "#FFFFFF",
+						Stripe = "#500000",
+						Pants = "#FFFFFF"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
