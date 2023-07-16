@@ -1609,6 +1609,41 @@ function getTeam(teamName)
 				}
 			},
 		}
+      elseif (string.lower(teamName) == "lsu") then
+		return {
+			City = "Lsu",
+			Name = "Tigers",
+			Abbreviation = "LSU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#461D7C",
+					Light = "#6529B2"
+				},
+				Alternate = {
+					Main = "#CFAB1D",
+					Light = "#FFEF3C"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FFFFFF",
+						Jersey = "#461D7C",
+						Stripe = "#FDD023",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#461D7C",
+						NumberStroke = "#461D7C",
+						Helmet = "#FDD023",
+						Jersey = "#FFFFFF",
+						Stripe = "#461D7C",
+						Pants = "#FDD023"
+					}
+				}
+			},
+		}
 	end
 	return "None"
 end
