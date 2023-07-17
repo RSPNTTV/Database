@@ -1679,41 +1679,42 @@ function getTeam(teamName)
 				}
 			},
 		}
-       elseif (string.lower(teamName) == "Georgia") then
-	return {
-		City = "Georgia",
-		Name = "Bulldogs",
-		Abbreviation = "UGA",
-		EndzoneDecal = "NONE",
-		Colors = {
-			Normal = {
-				Main = "#BA0C2F",
-				Light = "#FF2B60"
-			},
-			Alternate = {
-				Main = "#2B2B2B",
-				Light = "#575757"
-			},
-			Jersey = {
-				Home = {
-					NumberInner = "#FFFFFF",
-					NumberStroke = "#000000",
-					Helmet = "#BA0C2F",
-					Jersey = "#BA0C2F",
-					Stripe = "#000000",
-					Pants = "#FFFFFF"
+	elseif (string.lower(teamName) == "georgia") then
+		-- Team: Georgia
+		return {
+			City = "Georgia",
+			Name = "Bulldogs",
+			Abbreviation = "UGA",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#BA0C2F",
+					Light = "#FF2B60"
 				},
-				Away = {
-					NumberInner = "#000000",
-					NumberStroke = "#BA0C2F",
-					Helmet = "#BA0C2F",
-					Jersey = "#FFFFFF",
-					Stripe = "#000000",
-					Pants = "#BA0C2F"
+				Alternate = {
+					Main = "#2B2B2B",
+					Light = "#575757"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#BA0C2F",
+						Jersey = "#BA0C2F",
+						Stripe = "#000000",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#000000",
+						NumberStroke = "#BA0C2F",
+						Helmet = "#BA0C2F",
+						Jersey = "#FFFFFF",
+						Stripe = "#000000",
+						Pants = "#BA0C2F"
+					}
 				}
 			}
 		}
-	}
-        end
-        return "None"
+	end
+	return "None"
 end
