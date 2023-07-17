@@ -1715,6 +1715,42 @@ function getTeam(teamName)
 				}
 			}
 		}
+elseif (string.lower(teamName) == "alabama") then
+		-- Team: Georgia
+		return {
+			City = "Alabama",
+			Name = "Crimson Tide",
+			Abbreviation = "ALA",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#9E1B32",
+					Light = "#E02648"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#9E1B32",
+						Jersey = "#9E1B32",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#9E1B32",
+						NumberStroke = "#333333",
+						Helmet = "#9E1B32",
+						Jersey = "#FFFFFF",
+						Stripe = "#9E1B32",
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
 	end
 	return "None"
 end
