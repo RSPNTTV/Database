@@ -1644,7 +1644,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-      elseif (string.lower(teamName) == "Texas A&M") then
+      elseif (string.lower(teamName) == "texas a&m") then
 		return {
 			City = "Texas A&M",
 			Name = "Aggies",
