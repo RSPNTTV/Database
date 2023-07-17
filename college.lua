@@ -1692,7 +1692,7 @@ function getTeam(teamName)
 				},
 				Alternate = {
 					Main = "#2B2B2B",
-					Light = "#575757 "
+					Light = "#575757"
 				},
 				Jersey = {
 					Home = {
