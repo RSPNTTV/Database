@@ -1237,7 +1237,7 @@ function getTeam(teamName)
 				},
 				Alternate = {
 					Main = "#820021",
-					Light = "#FFF3C9"
+					Light = "#F5003D"
 				},
 				Jersey = {
 					Home = {
@@ -1680,7 +1680,7 @@ function getTeam(teamName)
 			},
 		}
 	elseif (string.lower(teamName) == "georgia") then
-		-- Team: Georgia
+		-- Team:
 		return {
 			City = "Georgia",
 			Name = "Bulldogs",
@@ -1747,6 +1747,42 @@ elseif (string.lower(teamName) == "alabama") then
 						Jersey = "#FFFFFF",
 						Stripe = "#9E1B32",
 						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
+elseif (string.lower(teamName) == "syracuse") then
+		-- Team: Georgia
+		return {
+			City = "Syracuse",
+			Name = "Orange",
+			Abbreviation = "SU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#F76900",
+					Light = "#FF953F"
+				},
+				Alternate = {
+					Main = "#000E54",
+					Light = "#0023D4"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000E54",
+						Helmet = "#FFFFFF",
+						Jersey = "#F76900",
+						Stripe = "#000E54",
+						Pants = "#F76900"
+					},
+					Away = {
+						NumberInner = "#F76900",
+						NumberStroke = "#000E54",
+						Helmet = "#F76900",
+						Jersey = "#FFFFFF",
+						Stripe = "#F76900",
+						Pants = "#000E54"
 					}
 				}
 			}
