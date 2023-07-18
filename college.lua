@@ -1787,6 +1787,42 @@ elseif (string.lower(teamName) == "syracuse") then
 				}
 			}
 		}
+elseif (string.lower(teamName) == "illinois") then
+		-- Team: Georgia
+		return {
+			City = "Illinois",
+			Name = "Fighting Illini",
+			Abbreviation = "IL",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E84A27",
+					Light = "#FF7D63"
+				},
+				Alternate = {
+					Main = "#13294B",
+					Light = "#295AA3"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#E84A27",
+						NumberStroke = "#000E54",
+						Helmet = "#E84A27",
+						Jersey = "#13294B",
+						Stripe = "#13294B",
+						Pants = "#E84A27"
+					},
+					Away = {
+						NumberInner = "#E84A27",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#E84A27",
+						Jersey = "#FFFFFF",
+						Stripe = "#E84A27",
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
 	end
 	return "None"
 end
