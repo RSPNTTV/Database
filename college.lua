@@ -1368,7 +1368,7 @@ function getTeam(teamName)
 		return {
 			City = "Indiana",
 			Name = "Hoosiers",
-			Abbreviation = "INDI",
+			Abbreviation = "IU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
