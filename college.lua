@@ -1860,13 +1860,6 @@ elseif (string.lower(teamName) == "auburn") then
 			}
 		}
 	end
-With these corrections, the code should now work correctly for both the "Illinois Fighting Illini" and "Auburn Tigers" away jerseys.
-
-
-
-
-
-
-	end
+end
 	return "None"
 end
