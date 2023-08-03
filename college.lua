@@ -1824,7 +1824,7 @@ elseif (string.lower(teamName) == "illinois") then
 			}
 		}
 elseif (string.lower(teamName) == "auburn") then
-		-- Team: Georgia
+		-- Team: Auburn
 		return {
 			City = "Auburn",
 			Name = "Tigers",
@@ -1849,16 +1849,24 @@ elseif (string.lower(teamName) == "auburn") then
 						Pants = "#FFFFFF"
 					},
 					Away = {
-						NumberInner = "#0C2340",
+						NumberInner = "#0C2340", 
 						NumberStroke = "#FFA449",
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
-						Stripe = "#0C2340",
+						Stripe = "#0C2340", 
 						Pants = "#FFFFFF"
 					}
 				}
 			}
 		}
+	end
+With these corrections, the code should now work correctly for both the "Illinois Fighting Illini" and "Auburn Tigers" away jerseys.
+
+
+
+
+
+
 	end
 	return "None"
 end
