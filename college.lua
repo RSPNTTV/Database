@@ -1849,11 +1849,11 @@ elseif (string.lower(teamName) == "auburn") then
 						Pants = "#FFFFFF"
 					},
 					Away = {
-						NumberInner = "#0C234",
+						NumberInner = "#0C2340",
 						NumberStroke = "#FFA449",
 						Helmet = "#FFFFFF",
 						Jersey = "#FFFFFF",
-						Stripe = "#0C234",
+						Stripe = "#0C2340",
 						Pants = "#FFFFFF"
 					}
 				}
