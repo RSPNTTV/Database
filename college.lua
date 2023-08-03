@@ -1859,6 +1859,42 @@ elseif (string.lower(teamName) == "auburn") then
 				}
 			}
 		}
+elseif (string.lower(teamName) == "texas tech") then
+		-- Team: Auburn
+		return {
+			City = "Texas Tech",
+			Name = "Red Raiders",
+			Abbreviation = "TEX",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#CC0000",
+					Light = "#FF4B4E"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#CC0000",
+						Stripe = "#CC0000",
+						Pants = "#000000"
+					},
+					Away = {
+						NumberInner = "#CC0000", 
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#CC0000", 
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
 	      end
            return "None"
              end
