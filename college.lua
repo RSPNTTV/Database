@@ -1823,6 +1823,42 @@ elseif (string.lower(teamName) == "illinois") then
 				}
 			}
 		}
+elseif (string.lower(teamName) == "auburn") then
+		-- Team: Georgia
+		return {
+			City = "Auburn",
+			Name = "Tigers",
+			Abbreviation = "AU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0C2340",
+					Light = "#184780"
+				},
+				Alternate = {
+					Main = "#E87722",
+					Light = "#FFA449"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FFFFFF",
+						Jersey = "#0C2340",
+						Stripe = "#E87722",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#0C234",
+						NumberStroke = "#FFA449",
+						Helmet = "#FFFFFF",
+						Jersey = "#FFFFFF",
+						Stripe = "#0C234",
+						Pants = "#FFFFFF"
+					}
+				}
+			}
+		}
 	end
 	return "None"
 end
