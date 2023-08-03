@@ -1031,12 +1031,12 @@ function getTeam(teamName)
 				},
 				Jersey = {
 					Home = {
-						NumberInner = "#CEB888",
+						NumberInner = "#FFFFFF",
 						NumberStroke = "#CEB888",
 						Helmet = "#CEB888",
 						Jersey = "#782F40",
 						Stripe = "#CEB888",
-						Pants = "#782F40"
+						Pants = "#FFFFFF"
 					},
 					Away = {
 						NumberInner = "#782F40",
