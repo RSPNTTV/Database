@@ -1860,6 +1860,5 @@ elseif (string.lower(teamName) == "auburn") then
 			}
 		}
 	end
-end
-	return "None"
+return "None"
 end
