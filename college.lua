@@ -1628,16 +1628,16 @@ function getTeam(teamName)
 					Home = {
 						NumberInner = "#FFFFFF",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#FFFFFF",
+						Helmet = "#CFAB1D",
 						Jersey = "#461D7C",
-						Stripe = "#FDD023",
-						Pants = "#FFFFFF"
+						Stripe = "#CFAB1D",
+						Pants = "#CFAB1D"
 					},
 					Away = {
 						NumberInner = "#461D7C",
 						NumberStroke = "#461D7C",
 						Helmet = "#CFAB1D",
-						Jersey = "#461D7C",
+						Jersey = "#FFFFFF",
 						Stripe = "#461D7C",
 						Pants = "#CFAB1D"
 					}
