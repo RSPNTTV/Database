@@ -2006,28 +2006,7 @@ function module:FormatNumber(number : number)
     end
 end
 
-local DefaultConfig = {
-    GameInfo = {
-        Away = "AWAY_TEAM_HERE",
-        AwayRank = 0,
-        Home = "HOME_TEAM_HERE",
-        HomeRank = 0,
-        Primetime = "false",
-        Series = "SERIES_HERE",
-        Season = "SEASON_HERE",
-        League = "LEAGUE_HERE"
-    },
-    Settings = {
-        AssetsFilePath = "",
-        AutoTwitchClipping = "false",
-        AutoTwitchUpdates = "false",
-        Channel = "",
-        SendToWebhook = "false",
-        TwitchAuthCode = "",
-        UploadStatsToDatabase = "false",
-        UploadToRealtimeAPI = "false"
-    }
-}
+
 function ReadConfigArray(default, compare)
     local returnTable = {}
 
