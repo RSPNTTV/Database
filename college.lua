@@ -1,3 +1,8 @@
+local isfile = isfile
+local readfile = readfile
+local writefile = writefile
+
+local module = {}
 function getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
