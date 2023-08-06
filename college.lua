@@ -1921,6 +1921,7 @@ elseif (string.lower(teamName) == "texas tech") then
 	      end
            return "None"
              end
+
 local RSPNChannels = {
     ["RoSportProgrammingNetwork"] = "730050166",
     ["RSPN_2"] = "846285089",
