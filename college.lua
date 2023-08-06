@@ -1964,6 +1964,48 @@ function module:FormatNumber(number : number)
     end
 end
 
+local RSPNChannels = {
+    ["RoSportProgrammingNetwork"] = "730050166",
+    ["RSPN_2"] = "846285089",
+    ["RSPN3"] = "846285510",
+    ["RSPN4"] = "875247498",
+    ["RSPN_5"] = "875247935",
+    ["RSPNDeportes"] = "875248189"
+}
+
+function module:GetRSPNChannels()
+    return RSPNChannels
+end
+
+function module:GetChannelID(channel)
+    return RSPNChannels[channel]
+end
+
+function module:FormatClock(seconds : number)
+    local minutes = (seconds - seconds%60)/60
+    seconds = seconds-minutes*60
+    local zero = ""
+    if (seconds < 10) then
+        zero = "0"
+    end
+
+    return minutes .. ":" .. zero .. seconds
+end
+
+function module:FormatNumber(number : number)
+    if (number == 1) then
+        return "1st"
+    elseif (number == 2) then
+        return "2nd"
+    elseif (number == 3) then
+        return "3rd"
+    elseif (number == 4) then
+        return "4th"
+    elseif (number >= 5) then
+        return "OT " .. number-4
+    end
+end
+
 local DefaultConfig = {
     GameInfo = {
         Away = "AWAY_TEAM_HERE",
