@@ -1941,7 +1941,7 @@ elseif (string.lower(teamName) == "saints") then
 			Colors = {
 				Normal = {
 					Main = "#A6192E",
-					Light = "FF4766"
+					Light = "#FF4766"
 				},
 				Alternate = {
 					Main = "#696158",
@@ -1963,6 +1963,42 @@ elseif (string.lower(teamName) == "saints") then
 						Jersey = "#FFFFFF",
 						Stripe = "#A6192E", 
 						Pants = "#696158"
+					}
+				}
+			}
+		}
+	 elseif (string.lower(teamName) == "Panthers") then
+		-- Team: Auburn
+		return {
+			City = "Tampa Bay",
+			Name = "Buccaneers",
+			Abbreviation = "TB",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0085CA",
+					Light = "#7AEBFF"
+				},
+				Alternate = {
+					Main = "#696158",
+					Light = "#B0A394"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#BFC0BF",
+						Jersey = "#0085CA",
+						Stripe = "#FFFFFF",
+						Pants = "#BFC0BF"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#000000",
+						Helmet = "#BFC0BF",
+						Jersey = "#FFFFFF",
+						Stripe = "#0085CA", 
+						Pants = "#FFFFFF"
 					}
 				}
 			}
