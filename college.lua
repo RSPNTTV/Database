@@ -1980,8 +1980,8 @@ elseif (string.lower(teamName) == "saints") then
 					Light = "#7AEBFF"
 				},
 				Alternate = {
-					Main = "#696158",
-					Light = "#B0A394"
+					Main = "#0D0D0D",
+					Light = "#404040"
 				},
 				Jersey = {
 					Home = {
