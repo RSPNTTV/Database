@@ -1931,7 +1931,7 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
- elseif (string.lower(teamName) == "Buccaneers") then
+ elseif (string.lower(teamName) == "buccaneers") then
 		-- Team: Auburn
 		return {
 			City = "Tampa Bay",
