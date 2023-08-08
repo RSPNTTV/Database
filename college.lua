@@ -1915,7 +1915,7 @@ elseif (string.lower(teamName) == "saints") then
 					Home = {
 						NumberInner = "#FFEEC8",
 						NumberStroke = "#FFFFFF",
-						Helmet = "#000000",
+						Helmet = "#D3BC8D",
 						Jersey = "#0D0D0D",
 						Stripe = "#0D0D0D",
 						Pants = "#0D0D0D"
