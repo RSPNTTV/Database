@@ -1895,6 +1895,42 @@ elseif (string.lower(teamName) == "texas tech") then
 				}
 			}
 		}
+elseif (string.lower(teamName) == "saints") then
+		-- Team: Auburn
+		return {
+			City = "New Orleans",
+			Name = "Saints",
+			Abbreviation = "NO",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#D3BC8D",
+					Light = "#FFEEC8"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFEEC8",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#0D0D0D",
+						Stripe = "#0D0D0D",
+						Pants = "#0D0D0D"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#FFFFFF",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#0D0D0D", 
+						Pants = "#0D0D0D"
+					}
+				}
+			}
+		}
 	      end
            return "None"
              end
