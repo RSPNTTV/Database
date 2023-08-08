@@ -1970,9 +1970,9 @@ elseif (string.lower(teamName) == "saints") then
 	 elseif (string.lower(teamName) == "Panthers") then
 		-- Team: Auburn
 		return {
-			City = "Tampa Bay",
-			Name = "Buccaneers",
-			Abbreviation = "TB",
+			City = "Carolina",
+			Name = "Panthers",
+			Abbreviation = "Car",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
