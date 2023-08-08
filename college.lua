@@ -1931,6 +1931,42 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
+ elseif (string.lower(teamName) == "Buccaneers") then
+		-- Team: Auburn
+		return {
+			City = "Tampa Bay",
+			Name = "Buccaneers",
+			Abbreviation = "TB",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#A6192E",
+					Light = "FF4766"
+				},
+				Alternate = {
+					Main = "#696158",
+					Light = "#B0A394"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#696158",
+						Jersey = "#A6192E",
+						Stripe = "#0D0D0D",
+						Pants = "#696158"
+					},
+					Away = {
+						NumberInner = "#A6192E", 
+						NumberStroke = "#000000",
+						Helmet = "#211F1C",
+						Jersey = "#FFFFFF",
+						Stripe = "#A6192E", 
+						Pants = "#696158"
+					}
+				}
+			}
+		}
 	      end
            return "None"
              end
