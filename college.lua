@@ -1922,7 +1922,7 @@ elseif (string.lower(teamName) == "saints") then
 					},
 					Away = {
 						NumberInner = "#000000", 
-						NumberStroke = "#FFFFFF",
+						NumberStroke = "#FFEEC8",
 						Helmet = "#D3BC8D",
 						Jersey = "#FFFFFF",
 						Stripe = "#0D0D0D", 
@@ -1994,7 +1994,7 @@ elseif (string.lower(teamName) == "saints") then
 					},
 					Away = {
 						NumberInner = "#000000", 
-						NumberStroke = "#000000",
+						NumberStroke = "#0085CA",
 						Helmet = "#BFC0BF",
 						Jersey = "#FFFFFF",
 						Stripe = "#0085CA", 
