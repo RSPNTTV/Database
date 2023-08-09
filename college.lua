@@ -2039,6 +2039,42 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
+		elseif (string.lower(teamName) == "chiefs") then
+		-- Team: Auburn
+		return {
+			City = "Kansas City",
+			Name = "Chiefs",
+			Abbreviation = "KC",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#E31837",
+					Light = "#FF7B8A"
+				},
+				Alternate = {
+					Main = "#FFB612",
+					Light = "#FFD667"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB612",
+						NumberStroke = "#000000",
+						Helmet = "#E31837",
+						Jersey = "#E31837",
+						Stripe = "#FFB81C",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#E31837", 
+						NumberStroke = "#FFB81C",
+						Helmet = "#E31837",
+						Jersey = "#FFFFFF",
+						Stripe = "#E31837", 
+						Pants = "#FFB612"
+					}
+				}
+			}
+		}
 	      end
            return "None"
              end
