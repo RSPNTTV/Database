@@ -2003,6 +2003,42 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
+		elseif (string.lower(teamName) == "steelers") then
+		-- Team: Auburn
+		return {
+			City = "Pittsburgh",
+			Name = "Steelers",
+			Abbreviation = "PIT",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Alternate = {
+					Main = "#FFB612",
+					Light = "#FFD667"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFB612",
+						NumberStroke = "#000000",
+						Helmet = "#0D0D0DF",
+						Jersey = "#0D0D0D",
+						Stripe = "#000000",
+						Pants = "#FFB612"
+					},
+					Away = {
+						NumberInner = "#000000", 
+						NumberStroke = "#FFB612",
+						Helmet = "#000000",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFB612", 
+						Pants = "#FFB612"
+					}
+				}
+			}
+		}
 	      end
            return "None"
              end
