@@ -2023,9 +2023,9 @@ elseif (string.lower(teamName) == "saints") then
 					Home = {
 						NumberInner = "#FFB612",
 						NumberStroke = "#000000",
-						Helmet = "#0D0D0DF",
-						Jersey = "#0D0D0D",
-						Stripe = "#000000",
+						Helmet = "#000000",
+						Jersey = "#000000",
+						Stripe = "#FFB612",
 						Pants = "#FFB612"
 					},
 					Away = {
