@@ -2075,6 +2075,42 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
+		elseif (string.lower(teamName) == "packers) then
+		-- Team: Auburn
+		return {
+			City = "Greenbay",
+			Name = "Packers",
+			Abbreviation = "GB",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#203731",
+					Light = "#245436"
+				},
+				Alternate = {
+					Main = "#C4A139",
+					Light = "#FFD24A"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FFD24A",
+						Jersey = "#203731",
+						Stripe = "#203731",
+						Pants = "#FFD24A"
+					},
+					Away = {
+						NumberInner = "#203731", 
+						NumberStroke = "#203731",
+						Helmet = "#FFD24A",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFD24A", 
+						Pants = "#FFD24A"
+					}
+				}
+			}
+		}	
 	      end
            return "None"
              end
