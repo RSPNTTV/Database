@@ -1905,7 +1905,7 @@ elseif (string.lower(teamName) == "saints") then
 			Colors = {
 				Normal = {
 					Main = "#D3BC8D",
-					Light = "#FFEEC8"
+					Light = "#FFF4A4"
 				},
 				Alternate = {
 					Main = "#0D0D0D",
