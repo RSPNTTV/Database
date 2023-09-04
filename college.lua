@@ -176,7 +176,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "byu") then
 		return {
-			City = "Brigham Young University",
+			City = "BYU",
 			Name = "Cougars",
 			Abbreviation = "BYU",
 			EndzoneDecal = "NONE",
@@ -246,7 +246,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "ucf") then
 		return {
-			City = "Central Florida",
+			City = "UCF",
 			Name = "Knights",
 			Abbreviation = "UFC",
 			EndzoneDecal = "NONE",
