@@ -36,7 +36,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "michigan state") then
 		return {
-			City = "Michigan State",
+			City = "Michigan St",
 			Name = "Spartans",
 			Abbreviation = "MSU",
 			EndzoneDecal = "NONE",
@@ -141,7 +141,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "washington state") then
 		return {
-			City = "Washington State",
+			City = "Washington St",
 			Name = "Cougars",
 			Abbreviation = "WSU",
 			EndzoneDecal = "NONE",
@@ -281,7 +281,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "oklahoma state") then
 		return {
-			City = "Oklahoma State",
+			City = "Oklahoma St",
 			Name = "Cowboys",
 			Abbreviation = "OKST",
 			EndzoneDecal = "NONE",
@@ -351,7 +351,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "oregon state") then
 		return {
-			City = "Oregon State",
+			City = "Oregon St",
 			Name = "Beavers",
 			Abbreviation = "ORST",
 			EndzoneDecal = "NONE",
@@ -386,7 +386,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "ohio state") then
 		return {
-			City = "Ohio State",
+			City = "Ohio St",
 			Name = "Buckeyes",
 			Abbreviation = "OSU",
 			EndzoneDecal = "NONE",
@@ -421,7 +421,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "colorado state") then
 		return {
-			City = "Colorado State",
+			City = "Colorado St",
 			Name = "Rams",
 			Abbreviation = "CSU",
 			EndzoneDecal = "NONE",
@@ -666,7 +666,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "kansas state") then
 		return {
-			City = "Kansas State",
+			City = "Kansas St",
 			Name = "Wildcats",
 			Abbreviation = "KSU",
 			EndzoneDecal = "NONE",
@@ -806,7 +806,7 @@ function getTeam(teamName)
 		}	
 	elseif (string.lower(teamName) == "iowa state") then
 		return {
-			City = "Iowa State",
+			City = "Iowa St",
 			Name = "Cyclones",
 			Abbreviation = "ISU",
 			EndzoneDecal = "NONE",
@@ -841,7 +841,7 @@ function getTeam(teamName)
 		}	
 	elseif (string.lower(teamName) == "penn state") then
 		return {
-			City = "Penn State",
+			City = "Penn St",
 			Name = "Nittany Lions",
 			Abbreviation = "PENN",
 			EndzoneDecal = "NONE",
@@ -876,7 +876,7 @@ function getTeam(teamName)
 		}	
 	elseif (string.lower(teamName) == "georgia tech") then
 		return {
-			City = "Georgia Tech",
+			City = "Ga Tech",
 			Name = "Yellow Jackets",
 			Abbreviation = "GT",
 			EndzoneDecal = "NONE",
@@ -911,7 +911,7 @@ function getTeam(teamName)
 		}	
 	elseif (string.lower(teamName) == "san diego state") then
 		return {
-			City = "San Diego State",
+			City = "San Diego St",
 			Name = "Aztecs",
 			Abbreviation = "SDSU",
 			EndzoneDecal = "NONE",
@@ -946,7 +946,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "mississippi state") then
 		return {
-			City = "Mississippi State",
+			City = "Mississippi St",
 			Name = "Bulldogs",
 			Abbreviation = "MSST",
 			EndzoneDecal = "NONE",
@@ -1016,7 +1016,7 @@ function getTeam(teamName)
 		}	
 	elseif (string.lower(teamName) == "florida state") then
 		return {
-			City = "Florida State",
+			City = "Florida St",
 			Name = "Seminoles",
 			Abbreviation = "FSU",
 			EndzoneDecal = "NONE",
@@ -1156,7 +1156,7 @@ function getTeam(teamName)
 		}		
 	elseif (string.lower(teamName) == "san jose") then
 		return {
-			City = "San Jose State",
+			City = "San Jose St",
 			Name = "Spartans",
 			Abbreviation = "SJSU",
 			EndzoneDecal = "NONE",
@@ -1296,7 +1296,7 @@ function getTeam(teamName)
 		}
 	elseif (string.lower(teamName) == "boise state") then
 		return {
-			City = "Boise State",
+			City = "Boise St",
 			Name = "Broncos",
 			Abbreviation = "BSU",
 			EndzoneDecal = "NONE",
