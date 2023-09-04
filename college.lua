@@ -2075,7 +2075,7 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
-		elseif (string.lower(teamName) == "packers) then
+		elseif (string.lower(teamName) == "packers") then
 		-- Team: Auburn
 		return {
 			City = "Greenbay",
