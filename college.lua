@@ -2110,6 +2110,42 @@ elseif (string.lower(teamName) == "saints") then
 					}
 				}
 			}
+		}
+		elseif (string.lower(teamName) == "rspn") then
+		-- Team: Auburn
+		return {
+			City = "RSPN",
+			Name = "Streamers",
+			Abbreviation = "RSPN",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#002244",
+					Light = "#004487"
+				},
+				Alternate = {
+					Main = "#002244",
+					Light = "#004487"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#002244",
+						Jersey = "#002244",
+						Stripe = "#002244",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#002244", 
+						NumberStroke = "#002244",
+						Helmet = "#002244",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFD24A", 
+						Pants = "#FFD24A"
+					}
+				}
+			}
 		}	
 	      end
            return "None"
