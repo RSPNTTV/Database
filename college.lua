@@ -1904,7 +1904,7 @@ elseif (string.lower(teamName) == "saints") then
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
-					Main = "#D3BC8D",
+					Main = "#B8A37B",
 					Light = "#FFF4A4"
 				},
 				Alternate = {
