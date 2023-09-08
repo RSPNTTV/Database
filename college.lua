@@ -2111,42 +2111,43 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
-		elseif (string.lower(teamName) == "rspn") then
+		elseif (string.lower(teamName) == "marshall") then
 		-- Team: Auburn
 		return {
-			City = "RSPN",
-			Name = "Streamers",
-			Abbreviation = "RSPN",
+			City = "Marshall",
+			Name = "The Herd",
+			Abbreviation = "MAR",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
-					Main = "#002244",
-					Light = "#004487"
+					Main = "#00B140",
+					Light = "#11FF5C"
 				},
 				Alternate = {
-					Main = "#002244",
-					Light = "#004487"
+					Main = "#808080",
+					Light = "#ABABAB"
 				},
 				Jersey = {
 					Home = {
 						NumberInner = "#FFFFFF",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#002244",
-						Jersey = "#002244",
-						Stripe = "#002244",
-						Pants = "#FFFFFF"
+						NumberStroke = "#000000",
+						Helmet = "#FFFFFF",
+						Jersey = "#00B140",
+						Stripe = "#000000",
+						Pants = "#00B140"
 					},
 					Away = {
-						NumberInner = "#002244", 
-						NumberStroke = "#002244",
-						Helmet = "#002244",
-						Jersey = "#FFFFFF",
-						Stripe = "#FFD24A", 
+						NumberInner = "#FFFFFF", 
+						NumberStroke = "#00B140",
+						Helmet = "#FFFFFF",
+						Jersey = "#000000",
+						Stripe = "#00B140", 
 						Pants = "#FFD24A"
 					}
 				}
 			}
-		}	
+		}
+		
 	      end
            return "None"
              end
