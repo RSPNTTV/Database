@@ -2039,80 +2039,80 @@ elseif (string.lower(teamName) == "saints") then
 				}
 			}
 		}
-		elseif (string.lower(teamName) == "chiefs") then
-		-- Team: Auburn
-		return {
-			City = "Kansas City",
-			Name = "Chiefs",
-			Abbreviation = "KC",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#E31837",
-					Light = "#FF7B8A"
-				},
-				Alternate = {
-					Main = "#FFB612",
-					Light = "#FFD667"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFB612",
-						NumberStroke = "#000000",
-						Helmet = "#E31837",
-						Jersey = "#E31837",
-						Stripe = "#FFB81C",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#E31837", 
-						NumberStroke = "#FFB81C",
-						Helmet = "#E31837",
-						Jersey = "#FFFFFF",
-						Stripe = "#E31837", 
-						Pants = "#FFB612"
-					}
-				}
-			}
-		}
-		elseif (string.lower(teamName) == "packers") then
-		-- Team: Auburn
-		return {
-			City = "Greenbay",
-			Name = "Packers",
-			Abbreviation = "GB",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#203731",
-					Light = "#245436"
-				},
-				Alternate = {
-					Main = "#C4A139",
-					Light = "#FFD24A"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#FFD24A",
-						Jersey = "#203731",
-						Stripe = "#203731",
-						Pants = "#FFD24A"
-					},
-					Away = {
-						NumberInner = "#203731", 
-						NumberStroke = "#203731",
-						Helmet = "#FFD24A",
-						Jersey = "#FFFFFF",
-						Stripe = "#FFD24A", 
-						Pants = "#FFD24A"
-					}
-				}
-			}
-		}
-		elseif (string.lower(teamName) == "marshall") then
-    -- Team: Auburn
+		if (string.lower(teamName) == "chiefs") then
+    -- Team: Chiefs
+    return {
+        City = "Kansas City",
+        Name = "Chiefs",
+        Abbreviation = "KC",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#E31837",
+                Light = "#FF7B8A"
+            },
+            Alternate = {
+                Main = "#FFB612",
+                Light = "#FFD667"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFB612",
+                    NumberStroke = "#000000",
+                    Helmet = "#E31837",
+                    Jersey = "#E31837",
+                    Stripe = "#FFB81C",
+                    Pants = "#FFFFFF"
+                },
+                Away = {
+                    NumberInner = "#E31837", 
+                    NumberStroke = "#FFB81C",
+                    Helmet = "#E31837",
+                    Jersey = "#FFFFFF",
+                    Stripe = "#E31837", 
+                    Pants = "#FFB612"
+                }
+            }
+        }
+    }
+elseif (string.lower(teamName) == "packers") then
+    -- Team: Packers
+    return {
+        City = "Green Bay",
+        Name = "Packers",
+        Abbreviation = "GB",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#203731",
+                Light = "#245436"
+            },
+            Alternate = {
+                Main = "#C4A139",
+                Light = "#FFD24A"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFFFFF",
+                    NumberStroke = "#FFFFFF",
+                    Helmet = "#FFD24A",
+                    Jersey = "#203731",
+                    Stripe = "#203731",
+                    Pants = "#FFD24A"
+                },
+                Away = {
+                    NumberInner = "#203731", 
+                    NumberStroke = "#203731",
+                    Helmet = "#FFD24A",
+                    Jersey = "#FFFFFF",
+                    Stripe = "#FFD24A", 
+                    Pants = "#FFD24A"
+                }
+            }
+        }
+    }
+elseif (string.lower(teamName) == "marshall") then
+    -- Team: Marshall
     return {
         City = "Marshall",
         Name = "The Herd",
@@ -2141,12 +2141,13 @@ elseif (string.lower(teamName) == "saints") then
                     NumberStroke = "#00B140",
                     Helmet = "#FFFFFF",
                     Jersey = "#000000",
-                    Stripe = "#00B140",  -- Remove extra #
+                    Stripe = "#00B140",
                     Pants = "#FFD24A"
                 }
             }
         }
     }
+end
 		
 	      end
            return "None"
