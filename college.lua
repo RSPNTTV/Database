@@ -1895,259 +1895,43 @@ elseif (string.lower(teamName) == "texas tech") then
 				}
 			}
 		}
-elseif (string.lower(teamName) == "saints") then
-		-- Team: Auburn
-		return {
-			City = "New Orleans",
-			Name = "Saints",
-			Abbreviation = "NO",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#B8A37B",
-					Light = "#FFF4A4"
-				},
-				Alternate = {
-					Main = "#0D0D0D",
-					Light = "#404040"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFEEC8",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#D3BC8D",
-						Jersey = "#0D0D0D",
-						Stripe = "#0D0D0D",
-						Pants = "#0D0D0D"
-					},
-					Away = {
-						NumberInner = "#000000", 
-						NumberStroke = "#FFEEC8",
-						Helmet = "#D3BC8D",
-						Jersey = "#FFFFFF",
-						Stripe = "#0D0D0D", 
-						Pants = "#0D0D0D"
-					}
-				}
-			}
-		}
- elseif (string.lower(teamName) == "buccaneers") then
-		-- Team: Auburn
-		return {
-			City = "Tampa Bay",
-			Name = "Buccaneers",
-			Abbreviation = "TB",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#A6192E",
-					Light = "#FF4766"
-				},
-				Alternate = {
-					Main = "#696158",
-					Light = "#B0A394"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#000000",
-						Helmet = "#696158",
-						Jersey = "#A6192E",
-						Stripe = "#0D0D0D",
-						Pants = "#696158"
-					},
-					Away = {
-						NumberInner = "#A6192E", 
-						NumberStroke = "#000000",
-						Helmet = "#211F1C",
-						Jersey = "#FFFFFF",
-						Stripe = "#A6192E", 
-						Pants = "#696158"
-					}
-				}
-			}
-		}
-	 elseif (string.lower(teamName) == "panthers") then
-		-- Team: Auburn
-		return {
-			City = "Carolina",
-			Name = "Panthers",
-			Abbreviation = "CAR",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#0085CA",
-					Light = "#7AEBFF"
-				},
-				Alternate = {
-					Main = "#0D0D0D",
-					Light = "#404040"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#000000",
-						Helmet = "#BFC0BF",
-						Jersey = "#0085CA",
-						Stripe = "#FFFFFF",
-						Pants = "#BFC0BF"
-					},
-					Away = {
-						NumberInner = "#000000", 
-						NumberStroke = "#0085CA",
-						Helmet = "#BFC0BF",
-						Jersey = "#FFFFFF",
-						Stripe = "#0085CA", 
-						Pants = "#FFFFFF"
-					}
-				}
-			}
-		}
-		elseif (string.lower(teamName) == "steelers") then
-		-- Team: Auburn
-		return {
-			City = "Pittsburgh",
-			Name = "Steelers",
-			Abbreviation = "PIT",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#0D0D0D",
-					Light = "#404040"
-				},
-				Alternate = {
-					Main = "#FFB612",
-					Light = "#FFD667"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFB612",
-						NumberStroke = "#000000",
-						Helmet = "#000000",
-						Jersey = "#000000",
-						Stripe = "#FFB612",
-						Pants = "#FFB612"
-					},
-					Away = {
-						NumberInner = "#000000", 
-						NumberStroke = "#FFB612",
-						Helmet = "#000000",
-						Jersey = "#FFFFFF",
-						Stripe = "#FFB612", 
-						Pants = "#FFB612"
-					}
-				}
-			}
-		}
-		if (string.lower(teamName) == "chiefs") then
-    -- Team: Chiefs
-    return {
-        City = "Kansas City",
-        Name = "Chiefs",
-        Abbreviation = "KC",
-        EndzoneDecal = "NONE",
-        Colors = {
-            Normal = {
-                Main = "#E31837",
-                Light = "#FF7B8A"
-            },
-            Alternate = {
-                Main = "#FFB612",
-                Light = "#FFD667"
-            },
-            Jersey = {
-                Home = {
-                    NumberInner = "#FFB612",
-                    NumberStroke = "#000000",
-                    Helmet = "#E31837",
-                    Jersey = "#E31837",
-                    Stripe = "#FFB81C",
-                    Pants = "#FFFFFF"
-                },
-                Away = {
-                    NumberInner = "#E31837", 
-                    NumberStroke = "#FFB81C",
-                    Helmet = "#E31837",
-                    Jersey = "#FFFFFF",
-                    Stripe = "#E31837", 
-                    Pants = "#FFB612"
-                }
-            }
-        }
-    }
-elseif (string.lower(teamName) == "packers") then
-    -- Team: Packers
-    return {
-        City = "Green Bay",
-        Name = "Packers",
-        Abbreviation = "GB",
-        EndzoneDecal = "NONE",
-        Colors = {
-            Normal = {
-                Main = "#203731",
-                Light = "#245436"
-            },
-            Alternate = {
-                Main = "#C4A139",
-                Light = "#FFD24A"
-            },
-            Jersey = {
-                Home = {
-                    NumberInner = "#FFFFFF",
-                    NumberStroke = "#FFFFFF",
-                    Helmet = "#FFD24A",
-                    Jersey = "#203731",
-                    Stripe = "#203731",
-                    Pants = "#FFD24A"
-                },
-                Away = {
-                    NumberInner = "#203731", 
-                    NumberStroke = "#203731",
-                    Helmet = "#FFD24A",
-                    Jersey = "#FFFFFF",
-                    Stripe = "#FFD24A", 
-                    Pants = "#FFD24A"
-                }
-            }
-        }
-    }
 elseif (string.lower(teamName) == "marshall") then
-    -- Team: Marshall
-    return {
-        City = "Marshall",
-        Name = "The Herd",
-        Abbreviation = "MAR",
-        EndzoneDecal = "NONE",
-        Colors = {
-            Normal = {
-                Main = "#00B140",
-                Light = "#11FF5C"
-            },
-            Alternate = {
-                Main = "#808080",
-                Light = "#ABABAB"
-            },
-            Jersey = {
-                Home = {
-                    NumberInner = "#FFFFFF",
-                    NumberStroke = "#000000",
-                    Helmet = "#FFFFFF",
-                    Jersey = "#00B140",
-                    Stripe = "#000000",
-                    Pants = "#00B140"
-                },
-                Away = {
-                    NumberInner = "#FFFFFF", 
-                    NumberStroke = "#00B140",
-                    Helmet = "#FFFFFF",
-                    Jersey = "#000000",
-                    Stripe = "#00B140",
-                    Pants = "#FFD24A"
-                }
-            }
-        }
-    }
-end
+		-- Team: Auburn
+		return {
+			City = "Marshall",
+			Name = "The Herd",
+			Abbreviation = "MAR",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#00B140",
+					Light = "#1BFF63"
+				},
+				Alternate = {
+					Main = "#0D0D0D",
+					Light = "#404040"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#000000",
+						Helmet = "#FFFFFF",
+						Jersey = "#00B140",
+						Stripe = "#FFFFFF",
+						Pants = "#00B140"
+					},
+					Away = {
+						NumberInner = "#FFFFFF", 
+						NumberStroke = "#00B140",
+						Helmet = "#FFFFFF",
+						Jersey = "#000000",
+						Stripe = "#000000", 
+						Pants = "#000000"
+					}
+				}
+			}
+		}
+
 		
 	      end
            return "None"
