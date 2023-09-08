@@ -2112,41 +2112,41 @@ elseif (string.lower(teamName) == "saints") then
 			}
 		}
 		elseif (string.lower(teamName) == "marshall") then
-		-- Team: Auburn
-		return {
-			City = "Marshall",
-			Name = "The Herd",
-			Abbreviation = "MAR",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#00B140",
-					Light = "#11FF5C"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#000000",
-						Helmet = "#FFFFFF",
-						Jersey = "#00B140",
-						Stripe = "#000000",
-						Pants = "#00B140"
-					},
-					Away = {
-						NumberInner = "#FFFFFF", 
-						NumberStroke = "#00B140",
-						Helmet = "#FFFFFF",
-						Jersey = "#000000",
-						Stripe = "#00B140", 
-						Pants = "#FFD24A"
-					}
-				}
-			}
-		}
+    -- Team: Auburn
+    return {
+        City = "Marshall",
+        Name = "The Herd",
+        Abbreviation = "MAR",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#00B140",
+                Light = "#11FF5C"
+            },
+            Alternate = {
+                Main = "#808080",
+                Light = "#ABABAB"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFFFFF",
+                    NumberStroke = "#000000",
+                    Helmet = "#FFFFFF",
+                    Jersey = "#00B140",
+                    Stripe = "#000000",
+                    Pants = "#00B140"
+                },
+                Away = {
+                    NumberInner = "#FFFFFF", 
+                    NumberStroke = "#00B140",
+                    Helmet = "#FFFFFF",
+                    Jersey = "#000000",
+                    Stripe = "#00B140",  -- Remove extra #
+                    Pants = "#FFD24A"
+                }
+            }
+        }
+    }
 		
 	      end
            return "None"
