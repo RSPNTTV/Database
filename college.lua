@@ -1931,6 +1931,42 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			}
 		}
+		elseif (string.lower(teamName) == "liberty") then
+		-- Team: Auburn
+		return {
+			City = "Liberty",
+			Name = "Flames",
+			Abbreviation = "LIB",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#002D62",
+					Light = "#004696"
+				},
+				Alternate = {
+					Main = "#C41230",
+					Light = "#FF3762"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#C41230",
+						Helmet = "#002D62",
+						Jersey = "#002D62",
+						Stripe = "#C41230",
+						Pants = "#002D62"
+					},
+					Away = {
+						NumberInner = "#FFFFFF", 
+						NumberStroke = "#002D62",
+						Helmet = "#C41230",
+						Jersey = "#FFFFFF",
+						Stripe = "#FFFFFF", 
+						Pants = "#002D62"
+					}
+				}
+			}
+		}
 
 		
 	      end
