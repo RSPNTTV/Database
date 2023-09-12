@@ -55,7 +55,53 @@ function FindNumbers(children, inner, stroke)
     end
 end
 
+function SetJersey(player, teamInfo, pos)
+    pcall(function()
+        if not (player.Character) then
+            return
+        end
 
+        task.spawn(function()
+            local uniform = player.Character:WaitForChild("Uniform")
+            wait(0.5)
+
+            if not (uniform:FindFirstChild("Helmet")) then
+                return
+            end
+
+            --Setting Helmet
+            uniform.Helmet.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Helmet"])
+            uniform.Helmet.Mesh.TextureId = ""
+
+            if (uniform.Helmet:FindFirstChild("RightLogo")) then
+                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
+                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
+            end
+
+            --Setting Upper Uniform
+            uniform.ShoulderPads.Front.Team.Text = string.upper(teamInfo["Name"])
+            uniform.ShoulderPads.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
+            uniform.Shirt.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
+            uniform.LeftShortSleeve.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
+            uniform.RightShortSleeve.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
+
+            --Setting Pants
+            uniform.LeftPants.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Pants"])
+            uniform.RightPants.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Pants"])
+
+            --Setting Stripes
+            uniform.LeftGlove.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+            uniform.LeftShoe.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+            uniform.LeftSock.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+            uniform.RightGlove.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+            uniform.RightShoe.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+            uniform.RightSock.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Stripe"])
+
+            --Setting Numbers
+            FindNumbers(uniform:GetChildren(), Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["NumberInner"]), Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["NumberStroke"]))
+        end)
+    end)
+end
 
 function SetTime(time)
     --TODO (night/day)
@@ -69,16 +115,16 @@ function module:SetTeams(awayInfo, homeInfo)
     print("[ENVIROMENT] Setting the Stadium's colors.")
     local Stadium = Services["Workspace"].Models.Stadium
     for i,v in ipairs(Stadium.Seats:GetChildren()) do
-        v.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Helmet"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
     end
     for i,v in ipairs(Stadium.PressSeats:GetChildren()) do
-       v.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Light"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
     end
     for i,v in ipairs(Stadium.Barrier.PrimaryPads:GetChildren()) do
-      v.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Stripe"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
     end
     for i,v in ipairs(Stadium.Barrier.SecondaryPads:GetChildren()) do
-      v.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Helmet"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
     end
     Services["Workspace"].Models.Uprights1.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
     Services["Workspace"].Models.Uprights2.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
@@ -251,15 +297,15 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
             if (model:WaitForChild("Humanoid")) then
                 if (FFValues.PossessionTag.Value == FFValues.Home.Value.Name) then
                     if (model.Name == "Kicker") then
-                        SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
+                        SetJersey({Character = model},module.Settings["awayInfo"],"Away")
                     else
-                        SetJersey({Character = model},module.Settings["HomeInfo"],"Away")
+                        SetJersey({Character = model},module.Settings["homeInfo"],"Away")
                     end
                 else
                     if (model.Name == "Kicker") then
-                        SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
+                        SetJersey({Character = model},module.Settings["homeInfo"],"Home")
                     else
-                        SetJersey({Character = model},module.Settings["AwayInfo"],"Home")
+                        SetJersey({Character = model},module.Settings["awayInfo"],"Home")
                     end
                 end
                 print("[ENVIROMENT] Set " .. model.Name .. "'s Jersey")
@@ -278,9 +324,9 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
             if (player) then
                 print("[ENVIROMENT] Set " .. player.Name .. "'s Replay Jersey")
                 if (player.Team.Name == FFValues.Home.Value.Name) then
-                    SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
+                    SetJersey({Character = model},module.Settings["homeInfo"],"Home")
                 else
-                    SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
+                    SetJersey({Character = model},module.Settings["awayInfo"],"Away")
                 end
             end
         end
@@ -294,9 +340,9 @@ for i,player in ipairs(Services["Players"]:GetPlayers()) do
     player.CharacterAdded:Connect(function(character)
         print("[ENVIROMENT] Set " .. player.Name .. "'s Jersey")
         if (player.Team.Name == FFValues.Home.Value.Name) then
-            SetJersey(player,module.Settings["HomeInfo"],"Home")
+            SetJersey(player,module.Settings["homeInfo"],"Home")
         else
-            SetJersey(player,module.Settings["AwayInfo"],"Away")
+            SetJersey(player,module.Settings["awayInfo"],"Away")
         end
     end)
 end
