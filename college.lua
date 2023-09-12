@@ -1936,7 +1936,7 @@ elseif (string.lower(teamName) == "marshall") then
 		return {
 			City = "Liberty",
 			Name = "Flames",
-			Abbreviation = "LIB",
+			Abbreviation = "UL",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1972,7 +1972,7 @@ elseif (string.lower(teamName) == "marshall") then
 		return {
 			City = "Oklahoma",
 			Name = "Sooners",
-			Abbreviation = "OU,
+			Abbreviation = "OU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
