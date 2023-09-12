@@ -280,10 +280,10 @@ Services["UserInput"].InputBegan:Connect(function(input)
     texture.Parent = targetLine
 
     if (Services["Workspace"].LineDown.Position.Z > Services["Workspace"].LineTogo.Position.Z) then
-        targetLine.Position = Vector3.new(0, 2.5, -37.00)
+        targetLine.Position = Vector3.new(0, 2.5, -40.00)
         targetLine.Orientation = Vector3.new(90,180,0)
     else
-        targetLine.Position = Vector3.new(0, 2.5, 37.00)
+        targetLine.Position = Vector3.new(0, 2.5, 40.00)
         targetLine.Orientation = Vector3.new(90,0,0)
     end
 
