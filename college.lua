@@ -1968,42 +1968,41 @@ elseif (string.lower(teamName) == "marshall") then
 			}
 		}
 		elseif (string.lower(teamName) == "oklahoma") then
-		-- Team: Auburn
-		return {
-			City = "Oklahoma",
-			Name = "Sooners",
-			Abbreviation = "OU",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#841617",
-					Light = "#CF215E"
-				},
-				Alternate = {
-					Main = "#B8B59C",
-					Light = "#FFFFFF"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#841617",
-						Helmet = "#841617",
-						Jersey = "#841617",
-						Stripe = "#841617",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#841617", 
-						NumberStroke = "#841617",
-						Helmet = "#841617",
-						Jersey = "#FFFFFF",
-						Stripe = "#841617", 
-						Pants = "#FFFFFF"
-					}
-				}
-			}
-		}
-
+        -- Team: Oklahoma
+        return {
+            City = "Oklahoma",
+            Name = "Sooners",
+            Abbreviation = "OU",
+            EndzoneDecal = "NONE",
+            Colors = {
+                Normal = {
+                    Main = "#841617",
+                    Light = "#CF215E"
+                },
+                Alternate = {
+                    Main = "#B8B59C",
+                    Light = "#FFFFFF"
+                },
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#841617",
+                        Helmet = "#841617",
+                        Jersey = "#841617",
+                        Stripe = "#841617",
+                        Pants = "#FFFFFF"
+                    },
+                    Away = {
+                        NumberInner = "#841617", 
+                        NumberStroke = "#841617",
+                        Helmet = "#841617",
+                        Jersey = "#FFFFFF",
+                        Stripe = "#841617", 
+                        Pants = "#FFFFFF"
+                    }
+                }
+            }
+        }
 		
 	      end
            return "None"
