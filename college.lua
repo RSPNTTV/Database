@@ -2003,6 +2003,42 @@ elseif (string.lower(teamName) == "marshall") then
                 }
             }
         }
+		elseif (string.lower(teamName) == "Arkansas") then
+        -- Team: Oklahoma
+        return {
+            City = "Arkansas",
+            Name = "Razorbacks",
+            Abbreviation = "ARK",
+            EndzoneDecal = "NONE",
+            Colors = {
+                Normal = {
+                    Main = "#9D2235",
+                    Light = "#FF3856"
+                },
+                Alternate = {
+                    Main = "#808080",
+                    Light = "#ABABAB"
+                },
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#9D2235",
+                        Jersey = "#9D2235",
+                        Stripe = "#FFFFFF",
+                        Pants = "#9D2235"
+                    },
+                    Away = {
+                        NumberInner = "#9D2235", 
+                        NumberStroke = "#9D2235",
+                        Helmet = "#9D2235",
+                        Jersey = "#FFFFFF",
+                        Stripe = "#9D2235", 
+                        Pants = "#FFFFFF"
+                    }
+                }
+            }
+        }
 		
 	      end
            return "None"
