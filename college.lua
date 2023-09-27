@@ -2003,7 +2003,7 @@ elseif (string.lower(teamName) == "marshall") then
                 }
             }
         }
-		elseif (string.lower(teamName) == "Arkansas") then
+		elseif (string.lower(teamName) == "arkansas") then
         -- Team: Oklahoma
         return {
             City = "Arkansas",
