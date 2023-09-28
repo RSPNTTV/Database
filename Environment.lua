@@ -73,10 +73,6 @@ function SetJersey(player, teamInfo, pos)
             uniform.Helmet.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Helmet"])
             uniform.Helmet.Mesh.TextureId = ""
 
-            if (uniform.Helmet:FindFirstChild("RightLogo")) then
-                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
-                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
-            end
 
             --Setting Upper Uniform
             uniform.ShoulderPads.Front.Team.Text = string.upper(teamInfo["Name"])
@@ -104,30 +100,29 @@ function SetJersey(player, teamInfo, pos)
 end
 
 function SetTime(time)
-    --TODO (night/day)
+    
 end
 
-function module:SetTeams(awayInfo, homeInfo)
-    module.Settings.AwayInfo = awayInfo
-    module.Settings.HomeInfo = homeInfo
+local homeInfo = getTeam(json.Home)
+local awayInfo = getTeam(json.Away)
 
     -- Setting Stadium Colors --
     print("[ENVIROMENT] Setting the Stadium's colors.")
     local Stadium = Services["Workspace"].Models.Stadium
     for i,v in ipairs(Stadium.Seats:GetChildren()) do
-        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
+        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Jersey"])
     end
     for i,v in ipairs(Stadium.PressSeats:GetChildren()) do
-        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
+        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Light])
     end
     for i,v in ipairs(Stadium.Barrier.PrimaryPads:GetChildren()) do
-        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
+        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Jersey"])
     end
     for i,v in ipairs(Stadium.Barrier.SecondaryPads:GetChildren()) do
-        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
+        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Light"])
     end
-    Services["Workspace"].Models.Uprights1.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
-    Services["Workspace"].Models.Uprights2.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
+    Services["Workspace"].Models.Uprights1.FGparts.Base.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Jersey"])
+    Services["Workspace"].Models.Uprights2.FGparts.Base.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Jersey"])
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
