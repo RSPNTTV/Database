@@ -2039,7 +2039,42 @@ elseif (string.lower(teamName) == "marshall") then
                 }
             }
         }
-		
+		elseif (string.lower(teamName) == "ole miss") then
+        -- Team: Oklahoma
+        return {
+            City = "Ole Miss",
+            Name = "Rebels",
+            Abbreviation = "UM",
+            EndzoneDecal = "NONE",
+            Colors = {
+                Normal = {
+                    Main = "#006BA6",
+                    Light = "#009DF2"
+                },
+                Alternate = {
+                    Main = "#CE1126",
+                    Light = "#FF3568"
+                },
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#009DF2",
+                        Jersey = "#009DF2",
+                        Stripe = "#CE1126",
+                        Pants = "#FFFFFF"
+                    },
+                    Away = {
+                        NumberInner = "#FFFFFF", 
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#FFFFFF",
+                        Jersey = "#CE1126",
+                        Stripe = "#009DF2", 
+                        Pants = "#FFFFFF"
+                    }
+                }
+            }
+        }	
 	      end
            return "None"
              end
