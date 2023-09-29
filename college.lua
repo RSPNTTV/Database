@@ -1936,7 +1936,7 @@ elseif (string.lower(teamName) == "marshall") then
 		return {
 			City = "Liberty",
 			Name = "Flames",
-			Abbreviation = "UL",
+			Abbreviation = "LU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -2044,7 +2044,7 @@ elseif (string.lower(teamName) == "marshall") then
         return {
             City = "Ole Miss",
             Name = "Rebels",
-            Abbreviation = "UM",
+            Abbreviation = "MISS",
             EndzoneDecal = "NONE",
             Colors = {
                 Normal = {
@@ -2075,6 +2075,76 @@ elseif (string.lower(teamName) == "marshall") then
                 }
             }
         }	
+	   elseif (string.lower(teamName) == "east carolina") then
+		return {
+			City = "East Carolina",
+			Name = "Pirates",
+			Abbreviation = "ECU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#461D7C",
+					Light = "#6529B2"
+				},
+				Alternate = {
+					Main = "#CFAB1D",
+					Light = "#FFEF3C"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#CFAB1D",
+						Helmet = "#696969",
+						Jersey = "#461D7C",
+						Stripe = "#461D7C",
+						Pants = "#CFAB1D"
+					},
+					Away = {
+						NumberInner = "#461D7C",
+						NumberStroke = "#461D7C",
+						Helmet = "#461D7C",
+						Jersey = "#FFFFFF",
+						Stripe = "#461D7C",
+						Pants = "#CFAB1D"
+					}
+				}
+			},
+		}
+		elseif (string.lower(teamName) == "nevada") then
+		return {
+			City = "Nevada",
+			Name = "Wolfpack",
+			Abbreviation = "NEV",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#003366",
+					Light = "#004E9C"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FFFFFF",
+						Jersey = "#003366",
+						Stripe = "#003366",
+						Pants = "#807F84"
+					},
+					Away = {
+						NumberInner = "#003366",
+						NumberStroke = "#003366",
+						Helmet = "#807F84",
+						Jersey = "#FFFFFF",
+						Stripe = "#003366",
+						Pants = "#003366"
+					}
+				}
+			},
+		}
 	      end
            return "None"
              end
