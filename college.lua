@@ -2052,8 +2052,8 @@ elseif (string.lower(teamName) == "marshall") then
                     Light = "#009DF2"
                 },
                 Alternate = {
-                    Main = "#CE1126",
-                    Light = "#FF3568"
+                    Main = "#14213D",
+                    Light = "#315094"
                 },
                 Jersey = {
                     Home = {
