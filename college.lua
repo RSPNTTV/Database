@@ -2145,6 +2145,41 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			},
 		}
+		elseif (string.lower(teamName) == "tennessee") then
+		return {
+			City = "Tennessee",
+			Name = "Volunteers",
+			Abbreviation = "TEN",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#FF8200",
+					Light = "#FFAF46"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#FF8200",
+						Jersey = "#FF8200",
+						Stripe = "#FFFFFF",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#FF8200",
+						NumberStroke = "#FF8200",
+						Helmet = "#58595B",
+						Jersey = "#58595B",
+						Stripe = "#FF8200",
+						Pants = "#58595B"
+					}
+				}
+			},
+		}
 	      end
            return "None"
              end
