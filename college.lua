@@ -248,7 +248,7 @@ function getTeam(teamName)
 		return {
 			City = "UCF",
 			Name = "Knights",
-			Abbreviation = "UFC",
+			Abbreviation = "UCF",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -283,7 +283,7 @@ function getTeam(teamName)
 		return {
 			City = "Oklahoma St",
 			Name = "Cowboys",
-			Abbreviation = "OKST",
+			Abbreviation = "OSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -318,7 +318,7 @@ function getTeam(teamName)
 		return {
 			City = "Hawaii",
 			Name = "Warriors",
-			Abbreviation = "HAW",
+			Abbreviation = "HI",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -353,7 +353,7 @@ function getTeam(teamName)
 		return {
 			City = "Oregon St",
 			Name = "Beavers",
-			Abbreviation = "ORST",
+			Abbreviation = "OSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -458,7 +458,7 @@ function getTeam(teamName)
 		return {
 			City = "Rutgers",
 			Name = "Scarlet Knights",
-			Abbreviation = "RUTG",
+			Abbreviation = "RUT",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -563,7 +563,7 @@ function getTeam(teamName)
 		return {
 			City = "Cincinnati",
 			Name = "Bearcats",
-			Abbreviation = "CINN",
+			Abbreviation = "CIN",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -773,7 +773,7 @@ function getTeam(teamName)
 		return {
 			City = "Tulane",
 			Name = "Green Wave",
-			Abbreviation = "TULN",
+			Abbreviation = "TUL",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -843,7 +843,7 @@ function getTeam(teamName)
 		return {
 			City = "Penn St",
 			Name = "Nittany Lions",
-			Abbreviation = "PENN",
+			Abbreviation = "PSU",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1228,7 +1228,7 @@ function getTeam(teamName)
 		return {
 			City = "Arizona",
 			Name = "Wildcats",
-			Abbreviation = "ARIZ",
+			Abbreviation = "ARI",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1263,7 +1263,7 @@ function getTeam(teamName)
 		return {
 			City = "Maryland",
 			Name = "Terrapins",
-			Abbreviation = "UW",
+			Abbreviation = "MAR",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1574,41 +1574,6 @@ function getTeam(teamName)
 				}
 			},
 		}
-      elseif (string.lower(teamName) == "oregon") then
-		return {
-			City = "Oregon",
-			Name = "Ducks",
-			Abbreviation = "ORE",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#154733",
-					Light = "#008A00"
-				},
-				Alternate = {
-					Main = "#FEE123",
-					Light = "#FFE281"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FEE123",
-						NumberStroke = "#FEE123",
-						Helmet = "#154733",
-						Jersey = "#154733",
-						Stripe = "#154733",
-						Pants = "#154733"
-					},
-					Away = {
-						NumberInner = "#154733",
-						NumberStroke = "#FEE123",
-						Helmet = "#154733",
-						Jersey = "#FFFFFF",
-						Stripe = "#154733",
-						Pants = "#154733"
-					}
-				}
-			},
-		}
       elseif (string.lower(teamName) == "lsu") then
 		return {
 			City = "Lsu",
@@ -1792,7 +1757,7 @@ elseif (string.lower(teamName) == "illinois") then
 		return {
 			City = "Illinois",
 			Name = "Fighting Illini",
-			Abbreviation = "IL",
+			Abbreviation = "ILL",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
@@ -1828,7 +1793,7 @@ elseif (string.lower(teamName) == "auburn") then
 		return {
 			City = "Auburn",
 			Name = "Tigers",
-			Abbreviation = "AU",
+			Abbreviation = "AUB",
 			EndzoneDecal = "NONE",
 			Colors = {
 				Normal = {
