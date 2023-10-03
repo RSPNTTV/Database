@@ -2169,8 +2169,8 @@ elseif (string.lower(teamName) == "marshall") then
 			},
 		}
 	      end
-           return "nil"
-             end
+           return nil
+        end
 local RSPNChannels = {
     ["RoSportProgrammingNetwork"] = "730050166",
     ["RSPN_2"] = "846285089",
