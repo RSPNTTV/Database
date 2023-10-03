@@ -73,6 +73,10 @@ function SetJersey(player, teamInfo, pos)
             uniform.Helmet.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Helmet"])
             uniform.Helmet.Mesh.TextureId = ""
 
+            if (uniform.Helmet:FindFirstChild("RightLogo")) then
+                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
+                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
+            end
 
             --Setting Upper Uniform
             uniform.ShoulderPads.Front.Team.Text = string.upper(teamInfo["Name"])
@@ -100,33 +104,34 @@ function SetJersey(player, teamInfo, pos)
 end
 
 function SetTime(time)
-    
+    --TODO (night/day)
 end
 
-local homeInfo = getTeam(json.Home)
-local awayInfo = getTeam(json.Away)
+function module:SetTeams(awayInfo, homeInfo)
+    module.Settings.AwayInfo = awayInfo
+    module.Settings.HomeInfo = homeInfo
 
     -- Setting Stadium Colors --
     print("[ENVIROMENT] Setting the Stadium's colors.")
     local Stadium = Services["Workspace"].Models.Stadium
     for i,v in ipairs(Stadium.Seats:GetChildren()) do
-        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Jersey"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
     end
     for i,v in ipairs(Stadium.PressSeats:GetChildren()) do
-        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Light])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
     end
     for i,v in ipairs(Stadium.Barrier.PrimaryPads:GetChildren()) do
-        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Jersey"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
     end
     for i,v in ipairs(Stadium.Barrier.SecondaryPads:GetChildren()) do
-        v.Color = Color3.fromHex(awayInfo["Colors"]["Jersey"]["Home"]["Light"])
+        v.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Light)
     end
-    Services["Workspace"].Models.Uprights1.FGparts.Base.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Jersey"])
-    Services["Workspace"].Models.Uprights2.FGparts.Base.Color = Color3.fromHex(homeInfo["Colors"]["Jersey"]["Home"]["Jersey"])
+    Services["Workspace"].Models.Uprights1.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
+    Services["Workspace"].Models.Uprights2.FGparts.Base.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Normal.Main)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Logo.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/0001.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
@@ -154,7 +159,7 @@ local awayInfo = getTeam(json.Away)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/0001.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
@@ -165,7 +170,7 @@ local awayInfo = getTeam(json.Away)
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
     end
-    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
+    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/0001.png", false)
     endzoneTwoLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #2.")
 
@@ -182,10 +187,6 @@ local awayInfo = getTeam(json.Away)
 end
 
 function module:Touchdown(isHomeTeam)
-    local path = module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Fight Song.mp3"
-    if not (isHomeTeam) then
-        path = module.Settings["AssetsFolder"] .. module.Settings["AwayInfo"].City .. " " .. module.Settings["AwayInfo"].Name  .. "/Fight Song.mp3"
-    end
 
     if (isHomeTeam) then
         print("[ENVIROMENT] Playing " .. module.Settings["HomeInfo"].City .. "'s Touchdown Song.")
@@ -275,10 +276,10 @@ Services["UserInput"].InputBegan:Connect(function(input)
     texture.Parent = targetLine
 
     if (Services["Workspace"].LineDown.Position.Z > Services["Workspace"].LineTogo.Position.Z) then
-        targetLine.Position = Vector3.new(0, 2.5, -40.00)
+        targetLine.Position = Vector3.new(0, 2.5, -37.00)
         targetLine.Orientation = Vector3.new(90,180,0)
     else
-        targetLine.Position = Vector3.new(0, 2.5, 40.00)
+        targetLine.Position = Vector3.new(0, 2.5, 37.00)
         targetLine.Orientation = Vector3.new(90,0,0)
     end
 
@@ -292,15 +293,15 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
             if (model:WaitForChild("Humanoid")) then
                 if (FFValues.PossessionTag.Value == FFValues.Home.Value.Name) then
                     if (model.Name == "Kicker") then
-                        SetJersey({Character = model},module.Settings["awayInfo"],"Away")
+                        SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
                     else
-                        SetJersey({Character = model},module.Settings["homeInfo"],"Away")
+                        SetJersey({Character = model},module.Settings["HomeInfo"],"Away")
                     end
                 else
                     if (model.Name == "Kicker") then
-                        SetJersey({Character = model},module.Settings["homeInfo"],"Home")
+                        SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
                     else
-                        SetJersey({Character = model},module.Settings["awayInfo"],"Home")
+                        SetJersey({Character = model},module.Settings["AwayInfo"],"Home")
                     end
                 end
                 print("[ENVIROMENT] Set " .. model.Name .. "'s Jersey")
@@ -319,9 +320,9 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
             if (player) then
                 print("[ENVIROMENT] Set " .. player.Name .. "'s Replay Jersey")
                 if (player.Team.Name == FFValues.Home.Value.Name) then
-                    SetJersey({Character = model},module.Settings["homeInfo"],"Home")
+                    SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
                 else
-                    SetJersey({Character = model},module.Settings["awayInfo"],"Away")
+                    SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
                 end
             end
         end
@@ -335,9 +336,9 @@ for i,player in ipairs(Services["Players"]:GetPlayers()) do
     player.CharacterAdded:Connect(function(character)
         print("[ENVIROMENT] Set " .. player.Name .. "'s Jersey")
         if (player.Team.Name == FFValues.Home.Value.Name) then
-            SetJersey(player,module.Settings["homeInfo"],"Home")
+            SetJersey(player,module.Settings["HomeInfo"],"Home")
         else
-            SetJersey(player,module.Settings["awayInfo"],"Away")
+            SetJersey(player,module.Settings["AwayInfo"],"Away")
         end
     end)
 end
