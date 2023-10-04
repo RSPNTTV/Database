@@ -343,7 +343,7 @@ for i,player in ipairs(Services["Players"]:GetPlayers()) do
         end
     end)
 end
-
+    end)
 
 return module
-end)
+
