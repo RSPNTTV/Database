@@ -421,7 +421,6 @@ function module:GetTeam(teamName)
                     Main = "#808080",
                     Light = "#ABABAB"
                 },
-                Endzone = "#c20f2f",
                 Jersey = {
                     Home = {
                         NumberInner = "#FFFFFF",
