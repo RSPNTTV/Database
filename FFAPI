@@ -195,9 +195,7 @@ local CURRENT_PLAY_INFO = {
     first_down = false
 }
 
------------------------------------------------------------------------
--- Functions
------------------------------------------------------------------------
+
 function GetUserIDFromName(name : string)
     for i,v in ipairs(Services["Players"]:GetPlayers()) do
         if (v.Name == name) then
@@ -286,9 +284,7 @@ function GetWinPercentage(team : string)
     end
 end
 
------------------------------------------------------------------------
--- Listeners
------------------------------------------------------------------------
+
 Services["Storage"].Remotes.CharacterSoundEvent.OnClientEvent:Connect(function(category, categoryType, ...)
     local args = {...}
     if (category == "GuiScript") then
