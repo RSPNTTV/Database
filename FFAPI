@@ -1,3 +1,4 @@
+pcall(function() 
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
     HTTP = game:GetService("HttpService"),
@@ -961,3 +962,4 @@ task.spawn(function()
     end
 end)
 return module
+end)
