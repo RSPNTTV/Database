@@ -1,4 +1,15 @@
+--[[
+This module handles collecting all of the actual game data and exposing it for use in other scripts.
 
+This file contains the following features:
+* Advanced data collection for every play
+* Bindable Events for almost all possible events in the game
+* Old and Current Values for almost any value exposed by the game
+* A list of each team's drives, and each play in that drive
+* Player Stats Collection (everything returned by the normal stats menu)
+
+Created by Supermrk (@supermrk)
+]]
 
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
@@ -6,14 +17,21 @@ local Services = {
     Players = game:GetService("Players")
 }
 
-
+-----------------------------------------------------------------------
+-- Script API Declarations
+-----------------------------------------------------------------------
 local request = request or (syn and syn.request) or (http and http.request) or http_request
 
+-----------------------------------------------------------------------
+-- Final
+-----------------------------------------------------------------------
 local FFValues = Services["Storage"].Values
 local LocalPlayer = Services["Players"].LocalPlayer
 
 
-
+-----------------------------------------------------------------------
+-- Static
+-----------------------------------------------------------------------
 local module = {
     Settings = {
         GameID = nil,
@@ -288,7 +306,9 @@ function GetWinPercentage(team : string)
     end
 end
 
-
+-----------------------------------------------------------------------
+-- Listeners
+-----------------------------------------------------------------------
 Services["Storage"].Remotes.CharacterSoundEvent.OnClientEvent:Connect(function(category, categoryType, ...)
     local args = {...}
     if (category == "GuiScript") then
@@ -903,9 +923,9 @@ end)
 
 FFValues.PossessionTag.Changed:Connect(function(new)
     if (new == FFValues.Away.Value.Name) then
-        module.Values.Possession = 
+        module.Values.Possession = false
     else
-        module.Values.Possession = ◄
+        module.Values.Possession = true
     end
 end)
 
