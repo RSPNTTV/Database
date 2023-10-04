@@ -1,4 +1,4 @@
-pcall(function()
+
 --[[
 This module contains all of the features focusing on enhancing the Football Fusion Enviroment.
 
@@ -10,7 +10,6 @@ This file contains the following features:
 
 Created by Supermrk (@supermrk)
 ]]
-pcall(function()
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
     Workspace = game:GetService("Workspace"),
@@ -45,15 +44,17 @@ local FFValues = Services["Storage"].Values
 -----------------------------------------------------------------------
 -- Functions
 -----------------------------------------------------------------------A
-        function FindNumbers(children, inner, stroke)
-    for i,v in ipairs(children) do
-        if (v:IsA("TextLabel")) then
-            v.TextColor3 = inner
-            v.TextStrokeColor3 = stroke
-        elseif (#v:GetChildren() > 0) then
-            FindNumbers(v:GetChildren(), inner, stroke)
+  function FindNumbers(children, inner, stroke)
+    pcall(function()
+        for i, v in ipairs(children) do
+            if (v:IsA("TextLabel")) then
+                v.TextColor3 = inner
+                v.TextStrokeColor3 = stroke
+            elseif (#v:GetChildren() > 0) then
+                FindNumbers(v:GetChildren(), inner, stroke)
+            end
         end
-    end
+    end)
 end
 
 function SetJersey(player, teamInfo, pos)
@@ -256,11 +257,14 @@ Services["UserInput"].InputBegan:Connect(function(input)
         return
     end
 
-    if (Services["Workspace"]:FindFirstChild("TargetLine")) then
-        print("[ENVIROMENT] Disabled the Field Goal Target Line.")
-        Services["Workspace"]:FindFirstChild("TargetLine"):Destroy()
-        return
-    end
+
+  pcall(function()
+        if (Services["Workspace"]:FindFirstChild("TargetLine")) then
+            print("[ENVIROMENT] Disabled the Field Goal Target Line.")
+            Services["Workspace"]:FindFirstChild("TargetLine"):Destroy()
+            return
+        end
+
 
     local targetLine = Instance.new("Part")
     targetLine.Size = Vector3.new(160, 2.4, 1)
@@ -287,9 +291,12 @@ Services["UserInput"].InputBegan:Connect(function(input)
     targetLine.Parent = Services["Workspace"]
     print("[ENVIROMENT] Enabled the Field Goal Target Line.")
 end)
+    end)
+end)
 
 Services["Workspace"].DescendantAdded:Connect(function(model)
-    if (model:IsA("Model")) then
+    pcall(function()
+        if (model:IsA("Model")) then
         if (model.Name == "Kicker" or model.Name == "Punter") then
             if (model:WaitForChild("Humanoid")) then
                 if (FFValues.PossessionTag.Value == FFValues.Home.Value.Name) then
@@ -323,12 +330,12 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
                 if (player.Team.Name == FFValues.Home.Value.Name) then
                     SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
                 else
-                    SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
-                end
-            end
+                        SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
+                    end
         end
-    end
+    end)
 end)
+
 -----------------------------------------------------------------------
 -- Setup
 -----------------------------------------------------------------------
