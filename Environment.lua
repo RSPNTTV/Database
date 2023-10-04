@@ -131,7 +131,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"]  .. "/RSPN_New.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset("module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
@@ -159,7 +159,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .."RSPN_New.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
@@ -170,7 +170,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
     end
-    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .."RSPN_New.png", false)
     endzoneTwoLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #2.")
 
