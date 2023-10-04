@@ -407,41 +407,41 @@ function module:GetTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "ohio state") then
-		return {
-			City = "Ohio St",
-			Name = "Buckeyes",
-			Abbreviation = "OSU",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#BB0000",
-					Light = "#FF3B3E"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#BB0000",
-						Helmet = "#C7C7C7",
-						Jersey = "#BB0000",
-						Stripe = "#FFFFFF",
-						Pants = "#C7C7C7"
-					},
-					Away = {
-						NumberInner = "#BB0000",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#C7C7C7",
-						Jersey = "#FFFFFF",
-						Stripe = "#BB0000",
-						Pants = "#C7C7C7"
-					}
-				}
-			},
-		}
+	 elseif (string.lower(teamName) == "ohio state") then
+        return {
+            City = "Ohio State",
+            Name = "Buckeyes",
+            Abbreviation = "OSU",
+            Colors = {
+                Normal = {
+                    Main = "#BB0000",
+                    Light = "#FF3B3E"
+                },
+                Alternate = {
+                    Main = "#808080",
+                    Light = "#ABABAB"
+                },
+                Endzone = "#c20f2f",
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#BB0000",
+                        Helmet = "#C7C7C7",
+                        Jersey = "#BB0000",
+                        Stripe = "#FFFFFF",
+                        Pants = "#C7C7C7"
+                    },
+                    Away = {
+                        NumberInner = "#BB0000",
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#C7C7C7",
+                        Jersey = "#FFFFFF",
+                        Stripe = "#BB0000",
+                        Pants = "#C7C7C7"
+                    }
+                }
+            },
+        }
 	elseif (string.lower(teamName) == "colorado state") then
 		return {
 			City = "Colorado St",
