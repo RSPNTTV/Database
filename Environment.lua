@@ -165,7 +165,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     local endzoneTwoLogo = Field.Grass.Endzone.Two:FindFirstChild("ArtDecal")
     if not (endzoneTwoLogo) then
-        endzoneTwoLogo = Instance.new("Decal")
+        endzoneTwoLogo = Instance.new("Decal") 
         endzoneTwoLogo.Name = "ArtDecal"
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
