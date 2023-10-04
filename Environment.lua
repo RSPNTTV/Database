@@ -5,7 +5,7 @@ This file contains the following features:
 * Automatic Team and Kicker Jerseys
 * Stadium Colors 
 * Field Decals (endzones, midfield)
-* Automatic Touchdown Songs
+* Automatic Touchdown Songs 
 
 Created by Supermrk (@supermrk)
 ]]
