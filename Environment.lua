@@ -1,4 +1,3 @@
-
 --[[
 This module contains all of the features focusing on enhancing the Football Fusion Enviroment.
 
@@ -8,8 +7,9 @@ This file contains the following features:
 * Field Decals (endzones, midfield)
 * Automatic Touchdown Songs
 
-Created by Supermrk (@supermrk) 
+Created by Supermrk (@supermrk)
 ]]
+
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
     Workspace = game:GetService("Workspace"),
@@ -43,18 +43,16 @@ local FFValues = Services["Storage"].Values
 
 -----------------------------------------------------------------------
 -- Functions
------------------------------------------------------------------------A
-  function FindNumbers(children, inner, stroke)
-    pcall(function()
-        for i, v in ipairs(children) do
-            if (v:IsA("TextLabel")) then
-                v.TextColor3 = inner
-                v.TextStrokeColor3 = stroke
-            elseif (#v:GetChildren() > 0) then
-                FindNumbers(v:GetChildren(), inner, stroke)
-            end
+-----------------------------------------------------------------------
+function FindNumbers(children, inner, stroke)
+    for i,v in ipairs(children) do
+        if (v:IsA("TextLabel")) then
+            v.TextColor3 = inner
+            v.TextStrokeColor3 = stroke
+        elseif (#v:GetChildren() > 0) then
+            FindNumbers(v:GetChildren(), inner, stroke)
         end
-    end)
+    end
 end
 
 function SetJersey(player, teamInfo, pos)
@@ -76,8 +74,8 @@ function SetJersey(player, teamInfo, pos)
             uniform.Helmet.Mesh.TextureId = ""
 
             if (uniform.Helmet:FindFirstChild("RightLogo")) then
-                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
-                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
+                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
+                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Logo.png", false)
             end
 
             --Setting Upper Uniform
@@ -133,7 +131,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Logo.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
@@ -161,7 +159,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
@@ -172,7 +170,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
     end
-    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
     endzoneTwoLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #2.")
 
@@ -189,6 +187,10 @@ function module:SetTeams(awayInfo, homeInfo)
 end
 
 function module:Touchdown(isHomeTeam)
+    local path = module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Fight Song.mp3"
+    if not (isHomeTeam) then
+        path = module.Settings["AssetsFolder"] .. module.Settings["AwayInfo"].City .. " " .. module.Settings["AwayInfo"].Name  .. "/Fight Song.mp3"
+    end
 
     if (isHomeTeam) then
         print("[ENVIROMENT] Playing " .. module.Settings["HomeInfo"].City .. "'s Touchdown Song.")
@@ -257,14 +259,11 @@ Services["UserInput"].InputBegan:Connect(function(input)
         return
     end
 
-
-  pcall(function()
-        if (Services["Workspace"]:FindFirstChild("TargetLine")) then
-            print("[ENVIROMENT] Disabled the Field Goal Target Line.")
-            Services["Workspace"]:FindFirstChild("TargetLine"):Destroy()
-            return
-        end
-
+    if (Services["Workspace"]:FindFirstChild("TargetLine")) then
+        print("[ENVIROMENT] Disabled the Field Goal Target Line.")
+        Services["Workspace"]:FindFirstChild("TargetLine"):Destroy()
+        return
+    end
 
     local targetLine = Instance.new("Part")
     targetLine.Size = Vector3.new(160, 2.4, 1)
@@ -291,12 +290,9 @@ Services["UserInput"].InputBegan:Connect(function(input)
     targetLine.Parent = Services["Workspace"]
     print("[ENVIROMENT] Enabled the Field Goal Target Line.")
 end)
-    end)
-end)
 
 Services["Workspace"].DescendantAdded:Connect(function(model)
-    pcall(function()
-        if (model:IsA("Model")) then
+    if (model:IsA("Model")) then
         if (model.Name == "Kicker" or model.Name == "Punter") then
             if (model:WaitForChild("Humanoid")) then
                 if (FFValues.PossessionTag.Value == FFValues.Home.Value.Name) then
@@ -330,12 +326,12 @@ Services["Workspace"].DescendantAdded:Connect(function(model)
                 if (player.Team.Name == FFValues.Home.Value.Name) then
                     SetJersey({Character = model},module.Settings["HomeInfo"],"Home")
                 else
-                        SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
-                    end
+                    SetJersey({Character = model},module.Settings["AwayInfo"],"Away")
+                end
+            end
         end
-    end)
+    end
 end)
-
 -----------------------------------------------------------------------
 -- Setup
 -----------------------------------------------------------------------
@@ -350,7 +346,6 @@ for i,player in ipairs(Services["Players"]:GetPlayers()) do
         end
     end)
 end
-    end)
+
 
 return module
-
