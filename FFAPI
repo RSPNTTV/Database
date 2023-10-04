@@ -4,21 +4,14 @@ local Services = {
     Players = game:GetService("Players")
 }
 
------------------------------------------------------------------------
--- Script API Declarations
------------------------------------------------------------------------
+
 local request = request or (syn and syn.request) or (http and http.request) or http_request
 
------------------------------------------------------------------------
--- Final
------------------------------------------------------------------------
+
 local FFValues = Services["Storage"].Values
 local LocalPlayer = Services["Players"].LocalPlayer
 
 
------------------------------------------------------------------------
--- Static
------------------------------------------------------------------------
 local module = {
     Settings = {
         GameID = nil,
