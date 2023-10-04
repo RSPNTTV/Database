@@ -1,15 +1,4 @@
---[[
-This module handles collecting all of the actual game data and exposing it for use in other scripts.
 
-This file contains the following features:
-* Advanced data collection for every play
-* Bindable Events for almost all possible events in the game
-* Old and Current Values for almost any value exposed by the game
-* A list of each team's drives, and each play in that drive
-* Player Stats Collection (everything returned by the normal stats menu)
-
-Created by Supermrk (@supermrk)
-]]
 
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
