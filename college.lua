@@ -431,13 +431,13 @@ function module:GetTeam(teamName)
                         Stripe = "#FFFFFF",
                         Pants = "#C7C7C7"
                     },
-                    Away = {
+                   Away = {
                         NumberInner = "#BB0000",
-                        NumberStroke = "#FFFFFF",
+                        NumberStroke = "#BB0000",
                         Helmet = "#C7C7C7",
                         Jersey = "#FFFFFF",
                         Stripe = "#BB0000",
-                        Pants = "#C7C7C7"
+                        Pants = "#FFFFFF"
                     }
                 }
             },
