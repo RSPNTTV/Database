@@ -8,7 +8,7 @@ This file contains the following features:
 * Field Decals (endzones, midfield)
 * Automatic Touchdown Songs
 
-Created by Supermrk (@supermrk)
+Created by Supermrk (@supermrk) 
 ]]
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
