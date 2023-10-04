@@ -1,3 +1,4 @@
+pcall(function()
 --[[
 This module contains all of the features focusing on enhancing the Football Fusion Enviroment.
 
@@ -43,8 +44,8 @@ local FFValues = Services["Storage"].Values
 
 -----------------------------------------------------------------------
 -- Functions
------------------------------------------------------------------------
-function FindNumbers(children, inner, stroke)
+-----------------------------------------------------------------------A
+        function FindNumbers(children, inner, stroke)
     for i,v in ipairs(children) do
         if (v:IsA("TextLabel")) then
             v.TextColor3 = inner
@@ -345,3 +346,4 @@ end
 
 
 return module
+end)
