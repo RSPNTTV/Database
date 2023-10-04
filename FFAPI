@@ -923,9 +923,9 @@ end)
 
 FFValues.PossessionTag.Changed:Connect(function(new)
     if (new == FFValues.Away.Value.Name) then
-        module.Values.Possession = false
+        module.Values.Possession = 
     else
-        module.Values.Possession = true
+        module.Values.Possession = ◄
     end
 end)
 
