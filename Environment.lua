@@ -3,7 +3,7 @@ This module contains all of the features focusing on enhancing the Football Fusi
 
 This file contains the following features:
 * Automatic Team and Kicker Jerseys
-* Stadium Colors 
+* Stadium Colors  
 * Field Decals (endzones, midfield)
 * Automatic Touchdown Songs 
 
