@@ -1,15 +1,15 @@
---[[ 
+--[[
 This module contains all of the features focusing on enhancing the Football Fusion Enviroment.
 
 This file contains the following features:
 * Automatic Team and Kicker Jerseys
-* Stadium Colors  
+* Stadium Colors
 * Field Decals (endzones, midfield)
-* Automatic Touchdown Songs 
+* Automatic Touchdown Songs
 
 Created by Supermrk (@supermrk)
 ]]
-                 
+
 local Services = {
     Storage = game:GetService("ReplicatedStorage"),
     Workspace = game:GetService("Workspace"),
@@ -74,12 +74,12 @@ function SetJersey(player, teamInfo, pos)
             uniform.Helmet.Mesh.TextureId = ""
 
             if (uniform.Helmet:FindFirstChild("RightLogo")) then
-                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
-                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
+                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
+                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
             end
 
             --Setting Upper Uniform
-            uniform.ShoulderPads.Front.Team.Text = string.upper(teamInfo["City"])
+            uniform.ShoulderPads.Front.Team.Text = string.upper(teamInfo["Name"])
             uniform.ShoulderPads.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
             uniform.Shirt.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
             uniform.LeftShortSleeve.Color = Color3.fromHex(teamInfo["Colors"]["Jersey"][pos]["Jersey"])
@@ -131,7 +131,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/0001.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
@@ -143,7 +143,7 @@ function module:SetTeams(awayInfo, homeInfo)
         Field.Grass.Endzone.Two.SurfaceGui:Destroy()
     end
 
-    if (module.Settings.HomeInfo.Colors.Endzone then
+    if (module.Settings.HomeInfo.Colors.Endzone) then
         print("[ENVIROMENT] Setting Endzone Color #1.")
         Field.Grass.Endzone.One.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Endzone)
     end
@@ -159,18 +159,18 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .."/Endzone.png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
     local endzoneTwoLogo = Field.Grass.Endzone.Two:FindFirstChild("ArtDecal")
     if not (endzoneTwoLogo) then
-        endzoneTwoLogo = Instance.new("Decal") 
+        endzoneTwoLogo = Instance.new("Decal")
         endzoneTwoLogo.Name = "ArtDecal"
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
     end
-    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .."/Endzone.png", false)
+    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
     endzoneTwoLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #2.")
 
