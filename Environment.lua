@@ -74,8 +74,8 @@ function SetJersey(player, teamInfo, pos)
             uniform.Helmet.Mesh.TextureId = ""
 
             if (uniform.Helmet:FindFirstChild("RightLogo")) then
-                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
-                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/0001.png", false)
+                uniform.Helmet.RightLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
+                uniform.Helmet.LeftLogo.Decal.Texture = getcustomasset(module.Settings["AssetsFolder"] .. teamInfo.City .. " " .. teamInfo.Name  .. "/Animation/0001.png", false)
             end
 
             --Setting Upper Uniform
@@ -131,7 +131,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/0001.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Animation/0001.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
@@ -159,7 +159,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. " " .. module.Settings["HomeInfo"].Name  .. "/Endzone.png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. "/Endzone.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
