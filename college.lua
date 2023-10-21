@@ -2134,6 +2134,42 @@ elseif (string.lower(teamName) == "marshall") then
 			},
 		}
 	      end
+	elseif (string.lower(teamName) == "ohio state") then
+		return {
+			City = "Ohio State",
+			Name = "Buckeyes",
+			Abbreviation = "OSU",
+			EndzoneDecal = "NONE",
+			Colors = {
+				Normal = {
+					Main = "#BB0000",
+					Light = "FF3F3C"
+				},
+				Alternate = {
+					Main = "#808080",
+					Light = "#ABABAB"
+				},
+				Jersey = {
+					Home = {
+						NumberInner = "#FFFFFF",
+						NumberStroke = "#FFFFFF",
+						Helmet = "#808080",
+						Jersey = "#BB0000",
+						Stripe = "#808080",
+						Pants = "#FFFFFF"
+					},
+					Away = {
+						NumberInner = "#BB0000",
+						NumberStroke = "#BB0000",
+						Helmet = "#808080",
+						Jersey = "#FFFFFF",
+						Stripe = "#808080",
+						Pants = "#808080"
+					}
+				}
+			},
+		}
+	      end
            return nil
         end
 local RSPNChannels = {
