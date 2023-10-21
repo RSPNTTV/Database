@@ -2012,16 +2012,16 @@ elseif (string.lower(teamName) == "marshall") then
                     Home = {
                         NumberInner = "#FFFFFF",
                         NumberStroke = "#FFFFFF",
-                        Helmet = "#009DF2",
+                        Helmet = "FFFFFF",
                         Jersey = "#009DF2",
                         Stripe = "#CE1126",
                         Pants = "#FFFFFF"
                     },
                     Away = {
-                        NumberInner = "#009DF2", 
-                        NumberStroke = "#009DF2",
+                        NumberInner = "#FFFFFF", 
+                        NumberStroke = "#FFFFFF",
                         Helmet = "#FFFFFF",
-                        Jersey = "#FFFFFF",
+                        Jersey = "#CE1126",
                         Stripe = "#CE1126", 
                         Pants = "#FFFFFF"
                     }
