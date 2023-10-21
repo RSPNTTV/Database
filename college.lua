@@ -2020,8 +2020,8 @@ elseif (string.lower(teamName) == "marshall") then
                     Away = {
                         NumberInner = "#FFFFFF", 
                         NumberStroke = "#FFFFFF",
-                        Helmet = "#FFFFFF",
-                        Jersey = "#CE1126",
+                        Helmet = "#14213D",
+                        Jersey = "#14213D",
                         Stripe = "#CE1126", 
                         Pants = "#FFFFFF"
                     }
