@@ -2063,114 +2063,113 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			},
 		}
-		elseif (string.lower(teamName) == "nevada") then
-		return {
-			City = "Nevada",
-			Name = "Wolfpack",
-			Abbreviation = "NEV",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#003366",
-					Light = "#004E9C"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#FFFFFF",
-						Jersey = "#003366",
-						Stripe = "#003366",
-						Pants = "#807F84"
-					},
-					Away = {
-						NumberInner = "#003366",
-						NumberStroke = "#003366",
-						Helmet = "#807F84",
-						Jersey = "#FFFFFF",
-						Stripe = "#003366",
-						Pants = "#003366"
-					}
-				}
-			},
-		}
-		elseif (string.lower(teamName) == "tennessee") then
-		return {
-			City = "Tennessee",
-			Name = "Volunteers",
-			Abbreviation = "TEN",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#FF8200",
-					Light = "#FFAF46"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#FF8200",
-						Jersey = "#FF8200",
-						Stripe = "#FFFFFF",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#FF8200",
-						NumberStroke = "#FF8200",
-						Helmet = "#58595B",
-						Jersey = "#58595B",
-						Stripe = "#FF8200",
-						Pants = "#58595B"
-					}
-				}
-			},
-		}
-	      end
-	elseif (string.lower(teamName) == "ohio state") then
-		return {
-			City = "Ohio State",
-			Name = "Buckeyes",
-			Abbreviation = "OSU",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#BB0000",
-					Light = "#FF3F3C"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#808080",
-						Jersey = "#BB0000",
-						Stripe = "#808080",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#BB0000",
-						NumberStroke = "#BB0000",
-						Helmet = "#808080",
-						Jersey = "#FFFFFF",
-						Stripe = "#808080",
-						Pants = "#808080"
-					}
-				}
-			},
-		}
-	      end
-           return nil
+if (string.lower(teamName) == "nevada") then
+    return {
+        City = "Nevada",
+        Name = "Wolfpack",
+        Abbreviation = "NEV",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#003366",
+                Light = "#004E9C"
+            },
+            Alternate = {
+                Main = "#808080",
+                Light = "#ABABAB"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFFFFF",
+                    NumberStroke = "#FFFFFF",
+                    Helmet = "#FFFFFF",
+                    Jersey = "#003366",
+                    Stripe = "#003366",
+                    Pants = "#807F84"
+                },
+                Away = {
+                    NumberInner = "#003366",
+                    NumberStroke = "#003366",
+                    Helmet = "#807F84",
+                    Jersey = "#FFFFFF",
+                    Stripe = "#003366",
+                    Pants = "#003366"
+                }
+            }
+        }
+    }
+elseif (string.lower(teamName) == "tennessee") then
+    return {
+        City = "Tennessee",
+        Name = "Volunteers",
+        Abbreviation = "TEN",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#FF8200",
+                Light = "#FFAF46"
+            },
+            Alternate = {
+                Main = "#808080",
+                Light = "#ABABAB"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFFFFF",
+                    NumberStroke = "#FFFFFF",
+                    Helmet = "#FF8200",
+                    Jersey = "#FF8200",
+                    Stripe = "#FFFFFF",
+                    Pants = "#FFFFFF"
+                },
+                Away = {
+                    NumberInner = "#FF8200",
+                    NumberStroke = "#FF8200",
+                    Helmet = "#58595B",
+                    Jersey = "#58595B",
+                    Stripe = "#FF8200",
+                    Pants = "#58595B"
+                }
+            }
+        }
+    }
+elseif (string.lower(teamName) == "ohio state") then
+    return {
+        City = "Ohio State",
+        Name = "Buckeyes",
+        Abbreviation = "OSU",
+        EndzoneDecal = "NONE",
+        Colors = {
+            Normal = {
+                Main = "#BB0000",
+                Light = "FF3F3C"
+            },
+            Alternate = {
+                Main = "#808080",
+                Light = "#ABABAB"
+            },
+            Jersey = {
+                Home = {
+                    NumberInner = "#FFFFFF",
+                    NumberStroke = "#FFFFFF",
+                    Helmet = "#808080",
+                    Jersey = "#BB0000",
+                    Stripe = "#808080",
+                    Pants = "#FFFFFF"
+                },
+                Away = {
+                    NumberInner = "#BB0000",
+                    NumberStroke = "#BB0000",
+                    Helmet = "#808080",
+                    Jersey = "#FFFFFF",
+                    Stripe = "#808080",
+                    Pants = "#808080"
+                }
+            }
+        }
+    }
+end
+  return nil
         end
 local RSPNChannels = {
     ["RoSportProgrammingNetwork"] = "730050166",
