@@ -2063,7 +2063,7 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			},
 		}
-if (string.lower(teamName) == "nevada") then
+	elseif (string.lower(teamName) == "nevada") then
     return {
         City = "Nevada",
         Name = "Wolfpack",
