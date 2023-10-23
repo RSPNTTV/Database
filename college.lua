@@ -2142,7 +2142,7 @@ elseif (string.lower(teamName) == "ohio state") then
         Colors = {
             Normal = {
                 Main = "#BB0000",
-                Light = "FF3F3C"
+                Light = "#FF3F3C"
             },
             Alternate = {
                 Main = "#808080",
