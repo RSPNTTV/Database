@@ -1364,9 +1364,9 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "mizzou") then
+	elseif (string.lower(teamName) == "missouri) then
 		return {
-			City = "Mizzou",
+			City = "Missouri",
 			Name = "Tigers",
 			Abbreviation = "MIZZ",
 			EndzoneDecal = "NONE",
@@ -1897,7 +1897,7 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			}
 		}
-		elseif (string.lower(teamName) == "oklahoma") then
+        elseif (string.lower(teamName) == "oklahoma") then
         -- Team: Oklahoma
         return {
             City = "Oklahoma",
@@ -1989,16 +1989,16 @@ elseif (string.lower(teamName) == "marshall") then
                     Home = {
                         NumberInner = "#FFFFFF",
                         NumberStroke = "#FFFFFF",
-                        Helmet = "FFFFFF",
+                        Helmet = "#009DF2",
                         Jersey = "#009DF2",
                         Stripe = "#CE1126",
                         Pants = "#FFFFFF"
                     },
                     Away = {
-                        NumberInner = "#FFFFFF", 
-                        NumberStroke = "#FFFFFF",
-                        Helmet = "#14213D",
-                        Jersey = "#14213D",
+                        NumberInner = "#CE1126", 
+                        NumberStroke = "#CE1126",
+                        Helmet = "#FFFFFF",
+                        Jersey = "#FFFFFF",
                         Stripe = "#CE1126", 
                         Pants = "#FFFFFF"
                     }
