@@ -1364,7 +1364,7 @@ function getTeam(teamName)
 				}
 			},
 		}
-	elseif (string.lower(teamName) == "missouri) then
+	elseif (string.lower(teamName) == "missouri") then
 		return {
 			City = "Missouri",
 			Name = "Tigers",
@@ -1897,8 +1897,7 @@ elseif (string.lower(teamName) == "marshall") then
 				}
 			}
 		}
-        elseif (string.lower(teamName) == "oklahoma") then
-        -- Team: Oklahoma
+               elseif (string.lower(teamName) == "oklahoma") then
         return {
             City = "Oklahoma",
             Name = "Sooners",
@@ -1934,7 +1933,6 @@ elseif (string.lower(teamName) == "marshall") then
             }
         }
 		elseif (string.lower(teamName) == "arkansas") then
-        -- Team: Oklahoma
         return {
             City = "Arkansas",
             Name = "Razorbacks",
@@ -1970,7 +1968,6 @@ elseif (string.lower(teamName) == "marshall") then
             }
         }
 		elseif (string.lower(teamName) == "ole miss") then
-        -- Team: Oklahoma
         return {
             City = "Ole Miss",
             Name = "Rebels",
