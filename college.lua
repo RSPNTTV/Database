@@ -2145,6 +2145,6 @@ elseif (string.lower(teamName) == "ohio state") then
             }
         }
     }
-    end
-    return nil
+   	end
+	return "None"
 end
