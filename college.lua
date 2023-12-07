@@ -2120,7 +2120,7 @@ elseif (string.lower(teamName) == "tennessee") then
             }
         }
     }
-elseif (string.lower(teamName) == "ohio state") then
+elseif (string.lower(teamName) == "ohio st") then
     return {
         City = "Ohio State",
         Name = "Buckeyes",
