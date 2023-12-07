@@ -159,7 +159,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneOneLogo.Parent = Field.Grass.Endzone.One
         print("[ENVIROMENT] Creating Endzone Decal #1.")
     end
-    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. ".png", false)
+    endzoneOneLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. "Endzone.png", false)
     endzoneOneLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #1.")
 
@@ -170,7 +170,7 @@ function module:SetTeams(awayInfo, homeInfo)
         endzoneTwoLogo.Parent = Field.Grass.Endzone.Two
         print("[ENVIROMENT] Creating Endzone Decal #2.")
     end
-    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. ".png", false)
+    endzoneTwoLogo.Texture = getcustomasset(module.Settings["AssetsFolder"] .. "Endzone.png", false)
     endzoneTwoLogo.Face = 1
     print("[ENVIROMENT] Set Endzone Decal #2.")
 
