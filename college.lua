@@ -1,5 +1,3 @@
-local Services = {
-    HTTP = game:GetService("HttpService")
 function module:GetTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
