@@ -131,7 +131,7 @@ function module:SetTeams(awayInfo, homeInfo)
 
     -- Setting Field --
     local Field = Services["Workspace"].Models.Field
-    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. "0001.png", false)
+    Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.Image = getcustomasset(module.Settings["AssetsFolder"] .. module.Settings["HomeInfo"].City .. module.Settings["HomeInfo"].Name "0001.png", false)
     Field.Grass.Normal.Mid.SurfaceGui.ImageLabel.ScaleType = Enum.ScaleType.Fit
 
     if (Field.Grass.Endzone.One:FindFirstChild("SurfaceGui")) then
