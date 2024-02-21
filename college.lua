@@ -1,3 +1,5 @@
+local module = {}
+
 function module:GetTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
