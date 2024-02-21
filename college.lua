@@ -2142,7 +2142,7 @@ elseif (string.lower(teamName) == "ohio st") then
             }
         }
     }
-   	end
-	return "None"
+   end
+    return "None"  -- This will only be reached if none of the previous conditions match
 end
 
