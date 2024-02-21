@@ -1,6 +1,4 @@
-local module = {}
-
-function module:GetTeam(teamName)
+function module:getTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
 			City = "South Carolina",
