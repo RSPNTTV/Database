@@ -1,13 +1,3 @@
---[[
-This module contains a lot of utility functions, as well as the central team database.
-
-This file contains the following features:
-* College Teams Database
-* Config File Reading/Saving/Updating
-
-Created by Supermrk (@supermrk)
-]]
-
 local Services = {
     HTTP = game:GetService("HttpService")
 }
@@ -20,7 +10,8 @@ local readfile = readfile
 local writefile = writefile
 
 local module = {}
-function GetTeam(teamName)
+
+function module:GetTeam(teamName)
 	if (string.lower(teamName) == "south carolina") then
 		return {
 			City = "South Carolina",
