@@ -1,4 +1,5 @@
---[[
+User
+whats wrong here? --[[
 This module contains a lot of utility functions, as well as the central team database.
 
 This file contains the following features:
@@ -20,78 +21,77 @@ local readfile = readfile
 local writefile = writefile
 
 local module = {}
-
-function module:GetTeam(teamName
-	if (string.lower(teamName) == "south carolina") then
-		return {
-			City = "South Carolina",
-			Name = "Gamecocks",
-			Abbreviation = "SC",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#73000A",
-					Light = "#B2000F"
-				},
-				Alternate = {
-					Main = "#171717",
-					Light = "#2E2E2E"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#000000",
-						Helmet = "#FFFFFF",
-						Jersey = "#73000A",
-						Stripe = "#FFFFFF",
-						Pants = "#FFFFFF"
-					},
-					Away = {
-						NumberInner = "#73000A",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#FFFFFF",
-						Jersey = "#FFFFFF",
-						Stripe = "#000000",
-						Pants = "#73000A"
-					}
-				}
-			},
-		}
-	elseif (string.lower(teamName) == "michigan state") then
-		return {
-			City = "Michigan St",
-			Name = "Spartans",
-			Abbreviation = "MSU",
-			EndzoneDecal = "NONE",
-			Colors = {
-				Normal = {
-					Main = "#18453B",
-					Light = "#2E8572"
-				},
-				Alternate = {
-					Main = "#808080",
-					Light = "#ABABAB"
-				},
-				Jersey = {
-					Home = {
-						NumberInner = "#FFFFFF",
-						NumberStroke = "#18453B",
-						Helmet = "#18453B",
-						Jersey = "#18453B",
-						Stripe = "#FFFFFF",
-						Pants = "#18453B"
-					},
-					Away = {
-						NumberInner = "#18453B",
-						NumberStroke = "#FFFFFF",
-						Helmet = "#18453B",
-						Jersey = "#FFFFFF",
-						Stripe = "#FFFFFF",
-						Pants = "#18453B"
-					}
-				}
-			},
-		}
+function module:GetTeam(teamName)
+    if (string.lower(teamName) == "south carolina") then
+        return {
+            City = "South Carolina",
+            Name = "Gamecocks",
+            Abbreviation = "SC",
+            EndzoneDecal = "NONE",
+            Colors = {
+                Normal = {
+                    Main = "#73000A",
+                    Light = "#B2000F"
+                },
+                Alternate = {
+                    Main = "#171717",
+                    Light = "#2E2E2E"
+                },
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#000000",
+                        Helmet = "#FFFFFF",
+                        Jersey = "#73000A",
+                        Stripe = "#FFFFFF",
+                        Pants = "#FFFFFF"
+                    },
+                    Away = {
+                        NumberInner = "#73000A",
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#FFFFFF",
+                        Jersey = "#FFFFFF",
+                        Stripe = "#000000",
+                        Pants = "#73000A"
+                    }
+                }
+            },
+        }
+    elseif (string.lower(teamName) == "michigan state") then
+        return {
+            City = "Michigan St",
+            Name = "Spartans",
+            Abbreviation = "MSU",
+            EndzoneDecal = "NONE",
+            Colors = {
+                Normal = {
+                    Main = "#18453B",
+                    Light = "#2E8572"
+                },
+                Alternate = {
+                    Main = "#808080",
+                    Light = "#ABABAB"
+                },
+                Jersey = {
+                    Home = {
+                        NumberInner = "#FFFFFF",
+                        NumberStroke = "#18453B",
+                        Helmet = "#18453B",
+                        Jersey = "#18453B",
+                        Stripe = "#FFFFFF",
+                        Pants = "#18453B"
+                    },
+                    Away = {
+                        NumberInner = "#18453B",
+                        NumberStroke = "#FFFFFF",
+                        Helmet = "#18453B",
+                        Jersey = "#FFFFFF",
+                        Stripe = "#FFFFFF",
+                        Pants = "#18453B"
+                    }
+                }
+            },
+        }
 	elseif (string.lower(teamName) == "usc") then
 		return {
 			City = "USC",
