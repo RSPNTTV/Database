@@ -1,5 +1,3 @@
-User
-whats wrong here? --[[
 This module contains a lot of utility functions, as well as the central team database.
 
 This file contains the following features:
