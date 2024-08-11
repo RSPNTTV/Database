@@ -1,4 +1,4 @@
-function GetTeam(teamName)
+function getTeam(teamName)
     if (string.lower(teamName) == "south carolina") then
         return {
             City = "South Carolina",
