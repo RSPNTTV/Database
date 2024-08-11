@@ -140,15 +140,6 @@ function module:SetTeams(awayInfo, homeInfo)
         Field.Grass.Endzone.Two.SurfaceGui:Destroy()
     end
 
-    if (module.Settings.HomeInfo.Colors.Endzone) then
-        print("[ENVIROMENT] Setting Endzone Color #1.")
-        Field.Grass.Endzone.One.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Endzone)
-    end
-    if (module.Settings.AwayInfo.Colors.Endzone) then
-        print("[ENVIROMENT] Setting Endzone Color #2.")
-        Field.Grass.Endzone.Two.Color = Color3.fromHex(module.Settings.HomeInfo.Colors.Endzone)
-    end
-
     local endzoneOneLogo = Field.Grass.Endzone.One:FindFirstChild("ArtDecal")
     if (endzoneOneLogo == nil) then
         endzoneOneLogo = Instance.new("Decal")
