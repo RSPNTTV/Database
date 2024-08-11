@@ -1,4 +1,4 @@
-function module:GetTeam(teamName)
+function GetTeam(teamName)
     if (string.lower(teamName) == "south carolina") then
         return {
             City = "South Carolina",
